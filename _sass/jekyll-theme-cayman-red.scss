@@ -329,19 +329,26 @@ margin-right:20px;
     }
   }
 
+  @media screen and (max-width: 1015px) {
+    .highlight {
+    margin-top:50px;
+    }
+  }
+
   .highlight {
     margin-bottom: 1rem;
 
     pre {
+      white-space: initial;
       margin-bottom: 0;
-      word-break: normal;
+      word-break: break-word ;
     }
   }
 
   .highlight pre,
   pre {
     padding: 0.8rem;
-    overflow: auto;
+    overflow:auto ;
     font-size: 0.9rem;
     line-height: 1.45;
     border-radius: 0.3rem;
