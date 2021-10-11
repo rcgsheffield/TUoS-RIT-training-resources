@@ -1,0 +1,44 @@
+name: Links
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 18 * * *"
+
+jobs:
+
+  linkChecker:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Install Jekyll and theme
+      - name: Install Jekyll and the base theme
+        run: |
+            sudo apt-get install -y ruby-full build-essential zlib1g-dev
+            echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+            echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+            echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+            source ~/.bashrc
+            sudo gem install jekyll bundler
+            sudo gem install jekyll-theme-cayman
+      # Build site
+      - name: Build the site.
+        run: jekyll build
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.0.8
+        with:
+          args: --verbose --no-progress **/*.md **/*.html
+        
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
