@@ -15,17 +15,39 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function() {
+        var fixmeTop = $('.main-content-search').offset().top;       // get initial position of the element
+
+      $(window).scroll(function() {                  // assign scroll event listener
+
+          var currentScroll = $(window).scrollTop(); // get current position
+
+          if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+              $('.main-content-search').css({                      // scroll to that element or below it
+                  position: 'fixed',
+                  top: 0+10,                        //  This gives the top plus a margin of 10px from it.... wat
+                  left: '35rem;',
+                  "offset-position": 'top;',
+
+              });
+          } else {                                   // apply position: static
+              $('.main-content-search').css({                      // if you scroll above it
+                  position: 'static'
+              });
+          }
+
+      });
+    }); 
+    </script>
+
   </head>
   <body>
     <div class="admin">
     </div>
-
-
-
-    
     <div class="main-content">
-
-    
       <div  class="project-tagline">
         <div class="logo-holder">
         <img class="logo" src="assets/img/TUOS_PRIMARY_LOGO_FULL COLOUR.png">
