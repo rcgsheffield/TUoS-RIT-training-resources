@@ -433,7 +433,7 @@ tableData:
   topic: Data,HPC,ML
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
-  ppt: http://rcg.group.shef.ac.uk/courses/ml
+
 
 - title: "RIT-322: Introduction to Machine Learning with Python II"
   description: "The session aims to introduce additional supervised/unsupervised machine learning tools such as principal component analysis and so on. Please make sure that you complete the core Python courses (RIT-101, RIT-102 and RIT-103) and Introduction to Machine Learning with Python I (RIT-321). "
@@ -441,5 +441,4 @@ tableData:
   level: Intermediate
   topic: Data,HPC,ML
   provider: Sheffield-RIT
-  url: https://crs.shef.ac.uk/
-  ppt: http://rcg.group.shef.ac.uk/courses/ml
+
