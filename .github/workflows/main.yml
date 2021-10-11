@@ -30,8 +30,8 @@ jobs:
             echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
             echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
             source ~/.bashrc
-            gem install jekyll bundler
-            gem install jekyll-theme-cayman
+            sudo gem install jekyll
+            sudo gem install jekyll-theme-cayman
 
       # Build site
       - name: Build the site.
