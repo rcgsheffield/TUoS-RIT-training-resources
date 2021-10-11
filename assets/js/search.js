@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
   $("#searchInput").on("keyup", function() {
     filterResults();
   });
@@ -15,7 +16,7 @@ $(document).ready(function() {
     filterResults();
   });
 
-  $('#supercomputing').click(function() {
+  $('#hpc').click(function() {
     filterResults();
   });
 
@@ -59,6 +60,9 @@ $(document).ready(function() {
     filterResults();
   });
   
+  document.getElementById('sheffield-rit').click();
+  document.getElementById('sheffield-rse').click();
+
   function filterResults() {
     $("#pageTable tr").filter(function() {
       text = $(this).text().toLowerCase();
@@ -71,14 +75,14 @@ $(document).ready(function() {
       isAdvanced = $('#advanced').is(':checked');
       noLevel = ( !isCore && !isIntermediate && !isAdvanced );
 
-      isSupercomputing = $('#supercomputing').is(':checked');
+      isHPC = $('#hpc').is(':checked');
       isData = $('#data').is(':checked');
       isCloud = $('#cloud').is(':checked');
       isVisualisation = $('#visualisation').is(':checked');
       isContainers = $('#containers').is(':checked');
       isDomains = $('#domains').is(':checked');
       isML = $('#ml').is(':checked');
-      noTopic = ( !isSupercomputing && !isData && !isCloud && !isVisualisation && !isContainers && !isDomains && !isML );
+      noTopic = ( !isHPC && !isData && !isCloud && !isVisualisation && !isContainers && !isDomains && !isML );
       
       isPawsey = $('#pawsey').is(':checked');
       isExternal = $('#external').is(':checked');
@@ -86,7 +90,7 @@ $(document).ready(function() {
       isSheffieldRSE = $('#sheffield-rse').is(':checked');
       noProvider = ( !isPawsey && !isExternal && !isSheffieldRIT && !isSheffieldRSE);
       
-      if (isCore || isIntermediate || isAdvanced || isSupercomputing || isData || isCloud || isVisualisation || isContainers || isDomains || isML || isPawsey || isExternal || isSheffieldRIT || isSheffieldRSE) 
+      if (isCore || isIntermediate || isAdvanced || isHPC || isData || isCloud || isVisualisation || isContainers || isDomains || isML || isPawsey || isExternal || isSheffieldRIT || isSheffieldRSE) 
       {
         tag = $(this).find("td:eq(1)").html().toLowerCase();        
         if ( ( searchValue == "" || text.indexOf(searchValue) > -1 ) &&
@@ -94,7 +98,7 @@ $(document).ready(function() {
             (isIntermediate && tag.indexOf('intermediate') > -1) ||
             (isAdvanced && tag.indexOf('advanced') > -1) ||
             noLevel ) &&
-            ( (isSupercomputing && tag.indexOf('supercomputing') > -1) ||
+            ( (isHPC && tag.indexOf('hpc') > -1) ||
             (isData && tag.indexOf('data') > -1) ||
             (isCloud && tag.indexOf('cloud') > -1) ||
             (isVisualisation && tag.indexOf('visualisation') > -1) ||

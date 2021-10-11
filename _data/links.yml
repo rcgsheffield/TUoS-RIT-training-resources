@@ -6,7 +6,7 @@ tableData:
   pageName: training.md
   level: Core
   topic: 
-    - Supercomputing
+    - HPC
     - Data
     - Cloud
     - Visualisation
@@ -18,7 +18,7 @@ tableData:
   description: Setonix overview and merit allocation schemes for 2022.
   pageName: training.md
   level: Core
-  topic: Supercomputing
+  topic: HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Pawsey%20Merit%20Allocation%20Training%202021.pdf?api=v2
   vid: https://www.youtube.com/watch?v=XpAg5zsNu3g
@@ -27,7 +27,7 @@ tableData:
   description: Part 1 - Beginners training outlining the major characteristics of a supercomputer, logging in, submitting a job and other key concepts.
   pageName: training.md
   level: Core
-  topic: Supercomputing
+  topic: HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart1V01.pdf?api=v2
   vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
@@ -37,7 +37,7 @@ tableData:
   description: Part 2 - Beginners training outlining use of High Performance Storage, running jobs, real world HPC use and getting help.
   pageName: training.md
   level: Core
-  topic: Supercomputing
+  topic: HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart2V01.pdf?api=v2
   vid: https://www.youtube.com/watch?v=l-S_dzCHcKk&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
@@ -47,7 +47,7 @@ tableData:
   description: Intermediate course on developing MPI and OpenMP applications developed by the Pawsey Supercomputing Centre.
   pageName: training.md
   level: Intermediate
-  topic: Supercomputing
+  topic: HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Intermediate%20Supercomputing.pdf?api=v2
   git: https://github.com/PawseySC/Intermediate-Supercomputing
@@ -103,7 +103,7 @@ tableData:
   description: Introduction to parallel programming with MPI.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic: HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20MPI.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-MPI
@@ -112,7 +112,7 @@ tableData:
   description: Introduction to parallel programming with OpenMP.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic:  HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20OpenMP.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-OpenMP
@@ -121,7 +121,7 @@ tableData:
   description: GPU programming essentials with CUDA.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic:  HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/GPU%20Programming%20Essentials.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-CUDA
@@ -130,7 +130,7 @@ tableData:
   description: Introduction to GPU programming with OpenACC.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic:  HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20OpenACC.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-OpenACC
@@ -139,7 +139,7 @@ tableData:
   description: Introduction to serial code optimisation.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic:  HPC
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Optimising%20Serial%20Code.pdf?api=v2
   git: https://github.com/PawseySC/Optimising-Serial-Code
@@ -243,7 +243,7 @@ tableData:
   description: Pawsey Webinar on Python for HPC.
   pageName: training.md
   level: Intermediate
-  topic: Supercomputing
+  topic:  HPC
   provider: Pawsey
   git: https://github.com/PawseySC/Using-Python-in-HPC
 
@@ -270,7 +270,7 @@ tableData:
   description: The course shows how Python can be used on parallel architectures and how to optimize critical parts of code using various tools.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic:  HPC
   provider: External
   url: https://www.cscs.ch/events/events/event-detail/high-performance-computing-with-python-4
   vid: https://www.youtube.com/playlist?list=PL1tk5lGm7zvR__U3b3HmhSqJSDQh1bwPP
@@ -280,7 +280,7 @@ tableData:
   description: Kokkos implements a programming model in C++ for writing performance portable applications targeting all major HPC platforms. This series presents an extensive introduction into everything necessary to start using Kokkos.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic:  HPC
   provider: External
   url: https://github.com/kokkos/kokkos-tutorials/wiki/Kokkos-Lecture-Series
   ppt: https://github.com/kokkos/kokkos-tutorials/wiki/Kokkos-Lecture-Series
@@ -291,7 +291,7 @@ tableData:
   description: ROCm Learning Center offers resources to developers looking to tap the power of accelerated (GPU) computing.
   pageName: training.md
   level: Advanced
-  topic: Supercomputing
+  topic:  HPC
   provider: External
   url: https://developer.amd.com/resources/rocm-resources/rocm-learning-center
   ppt: https://developer.amd.com/resources/rocm-resources/rocm-learning-center
@@ -331,7 +331,7 @@ tableData:
   description: "This course is a single 3 hour practical session providing a hands on introduction to the unix/linux operating system. The course provides training in using and understanding how to use and access applications running on remote machines such as those provided by the White Rose Grid. Students will gain an understanding of using UNIX/LINUX, secure shell protocols (such as ssh, scp and sftp). "
   pageName: training.md
   level: Core
-  topic: Supercomputing
+  topic:  HPC
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/linux/
@@ -340,7 +340,7 @@ tableData:
   description: "This course is a single 3 hour session providing a hands on introduction to Linux shell script. A shell script is a computer program designed to be run by the Unix shell, a command-line interpreter. "
   pageName: training.md
   level: Core
-  topic: Supercomputing
+  topic:  HPC
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/cic6001/
@@ -349,7 +349,7 @@ tableData:
   description: "This course is a single 3 hour session providing a hands on introduction to high performance computing using ShARC and the White Rose Grid. The course provides training in how jobs can be submitted to the grid in a manner that will provide a high throughput of work. Students will gain an understanding of ShARC/Bessemer, scheduling jobs using Sun Grid Engine/SLURM, what Applications are available and what Application development tools are available. The course assumes that students have a working knowledge of the material covered in course 'Introduction to Linux and Unix'. "
   pageName: training.md
   level: Core
-  topic: Supercomputing
+  topic:  HPC
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/hpcintro/
@@ -430,7 +430,7 @@ tableData:
   description: "Kick-start your project with machine learning tools in Python. This course starts from the basics of machine learning, focusing on practical applications. We will cover the fundamentals of regression models (linear regression, logistics regression, etc), cluster analysis (k-means, DBSCAN and so on) and decision trees. This course will not discuss the basics of Python programming language. Please make sure that you complete the core Python courses (RIT-101, RIT-102 and RIT-103). "
   pageName: training.md
   level: Intermediate
-  topic: Data,Supercomputing,ML
+  topic: Data,HPC,ML
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/ml
@@ -439,7 +439,7 @@ tableData:
   description: "The session aims to introduce additional supervised/unsupervised machine learning tools such as principal component analysis and so on. Please make sure that you complete the core Python courses (RIT-101, RIT-102 and RIT-103) and Introduction to Machine Learning with Python I (RIT-321). "
   pageName: training.md
   level: Intermediate
-  topic: SuperData,Supercomputing,MLcomputing
+  topic: Data,HPC,ML
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/ml
