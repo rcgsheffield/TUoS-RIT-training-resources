@@ -186,14 +186,18 @@ i {
 
   width: 212px;
   border-radius: 5px;
+  vertical-align: middle;
 }
 
 
 .logo-holder {
 
 float:left;
-margin-top:8px;
 margin-right:20px;
+padding-top:12px;
+padding-bottom:12px;
+background: white;
+border-radius: 5px;
 
 }
 
@@ -222,7 +226,7 @@ margin-right:20px;
 }
 
 .project-tagline {
-  margin-bottom:10px;
+  margin-bottom:15px;
   font-weight: normal;
 
   @include large {
@@ -248,7 +252,7 @@ margin-right:20px;
   @include large {
     /*#max-width: 110rem;*/
     max-width: 160rem; 
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
@@ -331,12 +335,12 @@ margin-right:20px;
 
   @media screen and (max-width: 1015px) {
     .highlight {
-    margin-top:50px;
+    margin-top:65px;
     }
   }
 
   .highlight {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     pre {
       white-space: initial;
@@ -485,6 +489,7 @@ margin-right:20px;
   border-radius: 5px;
   background-color: white;
   max-width: 1215px;
+  overflow: auto;
 }
 
 .site-footer {
