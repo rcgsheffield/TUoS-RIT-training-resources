@@ -45,6 +45,10 @@ jekyll build --watch --incremental
 
 * Open the site in your favorite browser - found in ``_site``
 
+## How to contribute / add your own resources
+
+Please file a PR with your event added to the ``_data/links.yml`` file. We will then review it and add it to the links.
+
 -----
 
 ## Acknowledgements
