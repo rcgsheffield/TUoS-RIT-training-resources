@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }} by TUoS</title>
+    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    {% if page.name == 'index.md' %}
+      <meta http-equiv = "refresh" content = "0; url = ./training.html" />
+    {% endif %}
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/search.js"></script>
+  </head>
+  <body>
+    <div class="admin">
+    </div>
+
+
+
+    
+    <div class="main-content">
+
+    
+      <div  class="project-tagline">
+        <div class="logo-holder">
+        <img class="logo" src="assets/img/TUOS_PRIMARY_LOGO_FULL COLOUR.png">
+        </div>
+        Research IT - Training Resources
+                <div class="shef_address">
+                  <a href="https://www.sheffield.ac.uk">Home &gt;</a>
+                  <a href="https://www.sheffield.ac.uk/it-services">IT Services &gt;</a>
+                  <a href="https://www.sheffield.ac.uk/it-services/research">Research &gt;</a>
+                </div>
+              </div>
+
+      <div class="main-content-search">
+        <div>
+          <input id="searchInput" type="text" placeholder="Search..." style="width: 98%;">
+        </div>
+        <div class="search-label">
+          <label>Level</label>
+        </div>
+        <div class="search-criteria">
+          <input type="checkbox" id="core" name="core" value="Core">
+          <label for="core">Core</label><br>
+          <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
+          <label for="intermediate">Intermediate</label><br>
+          <input type="checkbox" id="advanced" name="advanced" value="Advanced">
+          <label for="advanced">Advanced</label>
+        </div>
+        <div class="search-label">
+          <label>Topic</label>
+        </div>
+        <div class="search-criteria">
+          <input type="checkbox" id="supercomputing" name="supercomputing" value="Supercomputing">
+          <label for="home">Supercomputing</label><br>
+          <input type="checkbox" id="data" name="data" value="Data">
+          <label for="home">Data</label><br>
+          <input type="checkbox" id="cloud" name="cloud" value="Cloud">
+          <label for="home">Cloud</label><br>
+          <input type="checkbox" id="visualisation" name="visualisation" value="Visualisation">
+          <label for="home">Visualisation</label><br>
+          <input type="checkbox" id="containers" name="containers" value="Containers">
+          <label for="home">Containers</label><br>
+          <input type="checkbox" id="domains" name="domains" value="Domains">
+          <label for="home">Domains</label><br>
+          <input type="checkbox" id="ml" name="ml" value="ml">
+          <label for="home">Machine Learning</label><br>
+        </div>
+        <div class="search-label">
+          <label>Provider</label>
+        </div>
+        <div class="search-criteria">
+          <input type="checkbox" id="pawsey" name="pawsey" value="Pawsey">
+          <label for="home">Pawsey</label><br>
+          <input type="checkbox" id="external" name="external" value="External">
+          <label for="home">External</label><br>
+          <input type="checkbox" id="sheffield-rit" name="sheffield-rit" value="sheffield-rit">
+          <label for="home">Sheffield-RIT</label><br>
+          <input type="checkbox" id="sheffield-rse" name="sheffield-rse" value="sheffield-rse">
+          <label for="home">Sheffield-RSE</label><br>
+        </div>
+      </div>
+      <div class="main-content-table">
+
+        <table id="trainingTable">
+          <colgroup>
+            <col width="20%" />
+            <col width="10%" />
+            <col width="5%" />
+            <col width="5%" />
+            <col width="5%" />
+            <col width="5%" />
+            <col width="55%" />
+          </colgroup>
+          <thead>
+          <tr class="header">
+            <th>Name</th>
+            <th>Tags</th>
+            <th>Home</th>
+            <th>Slides</th>
+            <th>Video</th>
+            <th>GitHub</th>
+            <th>Short Description</th>
+          </tr>
+          </thead>
+          <tbody id="pageTable">
+            {% for data in site.data.links.tableData %}
+              {% if data.pageName == page.name %}
+                <tr>
+                  <td markdown="span">{{ data.title }}</td>
+                  <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
+                                      {% if data.topic != nil %}
+                                        <div><b>Topic:</b><br>
+                                          <div class="topics">
+                                          {% for topic in data.topic %}
+                                            {{ topic }}<br>
+                                          {% endfor %} 
+                                          </div>
+                                        </div>
+                                      {% endif %}
+                                      {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
+                  </td>
+                  <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
+                  <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
+                </tr>    
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+      <footer class="site-footer">
+        <div class="external-links">
+          {% for externalLink in site.data.externalLinks.links %}
+            <a href="{{ externalLink.url }}" target="_blank">{{ externalLink.title }}</a>
+          {% endfor %}
+        </div>
+        <div class="external-links-icons">
+          {% for externalLinkIcon in site.data.externalLinks.linkImages %}
+            <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer"><img  style="height:140px;" src="{{ externalLinkIcon.image }}" alt=""></a>
+          {% endfor %}
+        </div>
+        <p>Copyright &copy; The University of Sheffield - Research IT <script>document.write(new Date().getFullYear())</script></p>
+      </footer>
+    
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>

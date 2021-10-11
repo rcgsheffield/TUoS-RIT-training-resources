@@ -1,0 +1,445 @@
+tableData:
+
+# Core
+- title: Introduction to the Pawsey Supercomputing Centre
+  description: Advancing science through supercomputing.
+  pageName: training.md
+  level: Core
+  topic: 
+    - Supercomputing
+    - Data
+    - Cloud
+    - Visualisation
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20Pawsey.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=j2JFCsvsH1g&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=2
+
+- title: Pawsey Merit Allocation Training 2022
+  description: Setonix overview and merit allocation schemes for 2022.
+  pageName: training.md
+  level: Core
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Pawsey%20Merit%20Allocation%20Training%202021.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=XpAg5zsNu3g
+
+- title: Using Supercomputers – Part 1
+  description: Part 1 - Beginners training outlining the major characteristics of a supercomputer, logging in, submitting a job and other key concepts.
+  pageName: training.md
+  level: Core
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart1V01.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
+  git: https://github.com/PawseySC/Introductory-Supercomputing
+
+- title: Using Supercomputers – Part 2
+  description: Part 2 - Beginners training outlining use of High Performance Storage, running jobs, real world HPC use and getting help.
+  pageName: training.md
+  level: Core
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart2V01.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=l-S_dzCHcKk&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
+  git: https://github.com/PawseySC/Introductory-Supercomputing
+
+- title: Intermediate Supercomputing
+  description: Intermediate course on developing MPI and OpenMP applications developed by the Pawsey Supercomputing Centre.
+  pageName: training.md
+  level: Intermediate
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Intermediate%20Supercomputing.pdf?api=v2
+  git: https://github.com/PawseySC/Intermediate-Supercomputing
+
+- title: Shell for HPC
+  description: Pawsey version of the Introduction to Unix SW Carpentry material.
+  pageName: training.md
+  level: Core
+  provider: Pawsey
+  url: https://pawseysc.github.io/shell-hpc
+  git: https://github.com/PawseySC/shell-hpc
+
+- title: Using the Nimbus Research Cloud Series
+  description: This course will introduce you to the use of Nimbus, the research cloud at Pawsey Supercomputing Centre.
+  pageName: training.md
+  level: Core
+  topic: Cloud
+  provider: Pawsey
+  url: https://pawseysc.github.io/using-nimbus
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aYar4Fpust_u3mpDt07T2jl
+  git: https://github.com/PawseySC/using-nimbus
+
+- title: Introducing Remote Visualisation
+  description: Introduction to remote visualisation facilities at Pawsey.
+  pageName: training.md
+  level: Core
+  topic: Visualisation
+  provider: Pawsey
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/intro-to-remotevis
+  vid: https://www.youtube.com/watch?v=aZgyjpsglSU&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=4
+
+- title: Visualising Data with ParaView Part 1
+  description: Visualisation using ParaView.
+  pageName: training.md
+  level: Core
+  topic: Visualisation
+  provider: Pawsey
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/paraview-part1/#/
+
+- title: Visualising Data with ParaView Part 2
+  description: Visualisation using ParaView.
+  pageName: training.md
+  level: Core
+  topic: Visualisation
+  provider: Pawsey
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/paraview-part2/#/
+
+# Developer
+- title: Develop with MPI
+  description: Introduction to parallel programming with MPI.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20MPI.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-MPI
+
+- title: Develop with OpenMP
+  description: Introduction to parallel programming with OpenMP.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20OpenMP.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-OpenMP
+
+- title: Develop with CUDA
+  description: GPU programming essentials with CUDA.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/GPU%20Programming%20Essentials.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-CUDA
+
+- title: Develop with OpenACC
+  description: Introduction to GPU programming with OpenACC.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20OpenACC.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-OpenACC
+
+- title: Optimising Serial Code
+  description: Introduction to serial code optimisation.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Optimising%20Serial%20Code.pdf?api=v2
+  git: https://github.com/PawseySC/Optimising-Serial-Code
+
+# Containers
+- title: Webinar and Tutorial Series on Containers, June 2020
+  description: Software portability, data reproducibility, scaling to HPC. This series answers key questions about containers.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  url: https://pawseysc.github.io/singularity-containers
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Containers%20on%20HPC%20and%20Cloud%20with%20Singularity.pdf?api=v2
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-abfDjX1gugQh60AJRIpDrVz
+  git: https://github.com/pawseysc/singularity-containers
+
+- title: Using Containers with OpenFOAM (workshop series), May 2020
+  description: Hands-on practice with the use of OpenFOAM containers for computational fluid dynamics on HPC.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  url: https://pawseysc.github.io/containers-openfoam-workshop
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aZS9kbcuKpRtLswApf49Z4D
+  git: https://github.com/PawseySC/containers-openfoam-workshop-scripts
+
+- title: Using Containers in Bioinformatics (workshop series), July 2020
+  description: This workshop provides an interactive forum to explore the merits, advantages and limitations of applying containers in bioinformatics.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  url: https://pawseysc.github.io/containers-bioinformatics-workshop
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aYkz4rAl-nqmUfq_u9YUoFn
+  git: https://github.com/PawseySC/containers-bioinformatics-workshop
+
+- title: Designing Containers for Python and Radio-Astronomy (tutorial series), September 2020
+  description: Hands-on practice with the development of Python containers for radio-astronomy on HPC.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  url: https://pawseysc.github.io/containers-astro-python-workshop
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aaIQibfUlxpy0Qz453jaLzl
+  git: https://github.com/PawseySC/containers-astro-python-workshop
+
+- title: Containers @SC19, November 2019
+  description: Tutorial on Singularity containers for HPC at SC19 in Denver (USA).
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  url: https://pawseysc.github.io/sc19-containers
+  git: https://github.com/pawseysc/sc19-containers
+
+- title: Container Workflows
+  description: Tutorial on containers in HPC and Cloud.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  url: https://pawseysc.github.io/container-workflows
+  git: https://github.com/PawseySC/container-workflows
+
+- title: Docker @ResBaz19, July 2019
+  description: Docker containers tutorial for ResBaz19 in Perth.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  url: https://pawseysc.github.io/docker-resbaz19
+  git: https://github.com/PawseySC/docker-resbaz19
+
+- title: Bio Workshop 18, September 2018
+  description: Pawsey workshop on containers for bioinformatics.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  git: https://github.com/PawseySC/bio-workshop-18
+
+- title: Overview of Containers in HPC
+  description: Pawsey Webinar on containers for HPC.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Overview%20of%20Containers%20in%20HPC.pdf?api=v2
+  git: https://github.com/PawseySC/Overview-of-Containers-in-HPC
+
+# Misc Webinars
+- title: Cosmic Machines
+  description: Introductory workshop for Machine Learning in observational astronomy.
+  pageName: training.md
+  level: Intermediate
+  topic: Data
+  provider: Pawsey
+  git: https://github.com/PawseySC/cosmic-machines
+
+- title: Using Python in HPC
+  description: Pawsey Webinar on Python for HPC.
+  pageName: training.md
+  level: Intermediate
+  topic: Supercomputing
+  provider: Pawsey
+  git: https://github.com/PawseySC/Using-Python-in-HPC
+
+- title: Data Intensive Workflows
+  description: Workshop on data-intensive workflows at Data Science Week 2019, featuring Slurm, Dask and Nextflow.
+  pageName: training.md
+  level: Intermediate
+  topic: Data
+  provider: Pawsey
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Data%20Intensive%20Workflows%20in%20HPC.pdf?api=v2
+  git: https://github.com/PawseySC/data-intensive-workflows
+
+# External
+- title: Nextflow Training Workshop 2020
+  description: Nextflow enables scalable and reproducible scientific workflows. This workshop is a deep dive into its most prominent features.
+  pageName: training.md
+  level: Intermediate
+  topic: Data
+  provider: External
+  url: https://seqera.io/training
+  vid: https://www.youtube.com/playlist?list=PLPZ8WHdZGxmUv4W8ZRlmstkZwhb_fencI
+
+- title: High-Performance Computing with Python 2021
+  description: The course shows how Python can be used on parallel architectures and how to optimize critical parts of code using various tools.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: External
+  url: https://www.cscs.ch/events/events/event-detail/high-performance-computing-with-python-4
+  vid: https://www.youtube.com/playlist?list=PL1tk5lGm7zvR__U3b3HmhSqJSDQh1bwPP
+  git: https://github.com/eth-cscs/PythonHPC
+
+- title: Kokkos Lecture Series 2020
+  description: Kokkos implements a programming model in C++ for writing performance portable applications targeting all major HPC platforms. This series presents an extensive introduction into everything necessary to start using Kokkos.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: External
+  url: https://github.com/kokkos/kokkos-tutorials/wiki/Kokkos-Lecture-Series
+  ppt: https://github.com/kokkos/kokkos-tutorials/wiki/Kokkos-Lecture-Series
+  vid: https://github.com/kokkos/kokkos-tutorials/wiki/Kokkos-Lecture-Series
+  git: https://github.com/kokkos/kokkos-tutorials
+
+- title: ROCm Learning Centre
+  description: ROCm Learning Center offers resources to developers looking to tap the power of accelerated (GPU) computing.
+  pageName: training.md
+  level: Advanced
+  topic: Supercomputing
+  provider: External
+  url: https://developer.amd.com/resources/rocm-resources/rocm-learning-center
+  ppt: https://developer.amd.com/resources/rocm-resources/rocm-learning-center
+  vid: https://developer.amd.com/resources/rocm-resources/rocm-learning-center
+
+- title: PLUMED Masterclass 2021
+  description: This is a series of virtual and interactive classes, each one focused on a specific theme ranging from basic concepts to advanced topics in molecular simulations.
+  pageName: training.md
+  level: Intermediate
+  topic: Domains
+  provider: External
+  url: https://www.plumed.org/masterclass
+  vid: https://www.plumed.org/masterclass
+  git: https://github.com/plumed?q=masterclass&type=&language=&sort=
+
+- title: LAMMPS Virtual Workshop and Symposium 2021
+  description: The workshop and symposium include a beginner tutorial on LAMMPS,scientific presentations, and developer sessions.
+  pageName: training.md
+  level: Intermediate
+  topic: Domains
+  provider: External
+  url: https://www.lammps.org/workshops/Aug21
+  ppt: https://www.lammps.org/workshops/Aug21/
+  vid: https://www.lammps.org/workshops/Aug21
+
+- title: Quantum ESPRESSO e-School 2021
+  description: The school provides an introduction to materials and molecular modelling with Quantum ESPRESSO.
+  pageName: training.md
+  level: Intermediate
+  topic: Domains
+  provider: External
+  url: https://indico.ictp.it/event/9616
+  ppt: https://indico.ictp.it/event/9616/other-view?view=ictptimetable
+  vid: https://indico.ictp.it/event/9616/other-view?view=ictptimetable
+
+- title: "RIT-101: Introduction to Linux"
+  description: "This course is a single 3 hour practical session providing a hands on introduction to the unix/linux operating system. The course provides training in using and understanding how to use and access applications running on remote machines such as those provided by the White Rose Grid. Students will gain an understanding of using UNIX/LINUX, secure shell protocols (such as ssh, scp and sftp). "
+  pageName: training.md
+  level: Core
+  topic: Supercomputing
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/linux/
+
+- title: "RIT-102: Linux Shell Scripting Tutorial"
+  description: "This course is a single 3 hour session providing a hands on introduction to Linux shell script. A shell script is a computer program designed to be run by the Unix shell, a command-line interpreter. "
+  pageName: training.md
+  level: Core
+  topic: Supercomputing
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/cic6001/
+
+- title: "RIT-103: Introduction to Running Software on the HPC"
+  description: "This course is a single 3 hour session providing a hands on introduction to high performance computing using ShARC and the White Rose Grid. The course provides training in how jobs can be submitted to the grid in a manner that will provide a high throughput of work. Students will gain an understanding of ShARC/Bessemer, scheduling jobs using Sun Grid Engine/SLURM, what Applications are available and what Application development tools are available. The course assumes that students have a working knowledge of the material covered in course 'Introduction to Linux and Unix'. "
+  pageName: training.md
+  level: Core
+  topic: Supercomputing
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/hpcintro/
+
+- title: "RIT-201: Introduction to Matlab"
+  description: "Matlab is a powerful research tool and we aim to support those who are currently using, or who plan to use it for their research. This includes complete beginners as well as those who need a refresher. "
+  pageName: training.md
+  level: Core
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/matlab_training/
+
+- title: "RIT-211: Parallel Computing with Matlab"
+  description: "This course is split into two units, each unit taking an average of three hours of presentations and practice. Attenders must have basic MATLAB knowledge to be able to take advantage of this course. The first session will cover fundamentals of parallel MATLAB and the training exercises will be performed on the users' local Windows workstations. The second session will introduce using MATLAB on a Linux-based HPC cluster and the exercises will be performed on the Sheffield University HPC cluster named 'sharc' using the Distributed Compute Engine. Participants must register to use 'sharc' before attending the course."
+  pageName: training.md
+  level: Advanced
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://dsavas.staff.shef.ac.uk/teaching/parmat/index.html
+
+- title: "RIT-301: Introduction to Python Programming"
+  description: "Python is a widely used open source, high-level programming language. The design philosophy of the Python language provides code readability. The syntax allows programmers to express concepts in fewer lines of code than possible in low-level languages such as C/C++, Fortran or Java. This course provides a general introduction to the basic concepts of the Python programming language. This course is an ideal choice for people who starting to learn programming. Course content: Variables, Loops, Conditional statement, Lists. "
+  pageName: training.md
+  level: Core
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/python/
+
+- title: "RIT-302: Intermediate Python Programming"
+  description: "Course requirement: Introduction to Python Programming (CIC6010a). After the basics you can start digging into our intermediate-level tutorials that will teach you new Python concepts, such as functions and modules. Course content: Functions, Modules and Dictionary."
+  pageName: training.md
+  level: Intermediate
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/python/
+
+- title: "RIT-303: Advanced Python Programming"
+  description: "This course focuses on object oriented programming (OOP) paradigm In Python. OOP is another way of developing your program, combining data and functionality.You need to understand the basics of Python, such as variables, conditional statements, loops, functions, modules. These are discussed by Introduction to Python and Intermediate Python. If you are unsure about your Python skills, please attend these courses first. "
+  pageName: training.md
+  level: Advanced
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/python/
+
+- title: "RIT-311: Python for Data Science I"
+  description: "This course is an ideal choice for people who start to learn data science with Python. We will discuss how to read and initialise databases. We will also learn about the basics visualisation and statistical tools to scrutinise the hidden patterns in the data. If you are not familiar with Python Programming Language, please consider enrolling in Introduction, Intermediate and Advanced Python programming (RIT-101, RIT-102 and RIT-103). "
+  pageName: training.md
+  level: Intermediate
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/ds/
+
+- title: "RIT-312: Python for Data Science II"
+  description: "We focus on more advanced data science techniques such as bootstrapping, error analysis and regression. If you are not familiar with Python Programming Language, please consider enrolling in Introduction, Intermediate and Advanced Python programming (RIT-101, RIT-102 and RIT-103) and RIT-311: Python for Data Science I (RIT-201). "
+  pageName: training.md
+  level: Advanced
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/ds/
+
+- title: "RIT-313: Python for Data Science: Temporal Analysis"
+  description: "We will analyse recurring patterns in temporal signals to reveal the periodic behaviour of the data. We also perform Monte Carlo analysis to estimate the noise in the signal and create significance levels, assisting us the differentiate between real and artificial patterns in the signal. The course mainly focuses on Fourier-transformation. If you are not familiar with Python Programming Language, please consider enrolling in Introduction, Intermediate and Advanced Python programming (RIT-101, RIT-102 and RIT-103). "
+  pageName: training.md
+  level: Advanced
+  topic: Data
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/ds/
+
+- title: "RIT-321: Introduction to Machine Learning with Python"
+  description: "Kick-start your project with machine learning tools in Python. This course starts from the basics of machine learning, focusing on practical applications. We will cover the fundamentals of regression models (linear regression, logistics regression, etc), cluster analysis (k-means, DBSCAN and so on) and decision trees. This course will not discuss the basics of Python programming language. Please make sure that you complete the core Python courses (RIT-101, RIT-102 and RIT-103). "
+  pageName: training.md
+  level: Intermediate
+  topic: Data,Supercomputing,ML
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/ml
+
+- title: "RIT-322: Introduction to Machine Learning with Python II"
+  description: "The session aims to introduce additional supervised/unsupervised machine learning tools such as principal component analysis and so on. Please make sure that you complete the core Python courses (RIT-101, RIT-102 and RIT-103) and Introduction to Machine Learning with Python I (RIT-321). "
+  pageName: training.md
+  level: Intermediate
+  topic: SuperData,Supercomputing,MLcomputing
+  provider: Sheffield-RIT
+  url: https://crs.shef.ac.uk/
+  ppt: http://rcg.group.shef.ac.uk/courses/ml

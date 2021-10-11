@@ -1,0 +1,19 @@
+links:
+- title: HPC Documentation
+  url: https://docs.hpc.shef.ac.uk/en/latest/
+- title: Research IT @ TUoS GitHub
+  url: https://github.com/rcgsheffield
+- title: Research IT Course Registration System
+  url: https://crs.shef.ac.uk
+- title: Research IT @ TUoS Main Site 
+  url: https://www.sheffield.ac.uk/it-services/research
+linkImages:
+- image: assets/img/awards.png
+  href: https://www.sheffield.ac.uk/about/rankings
+- image: assets/img/russell.png
+  href: https://www.sheffield.ac.uk/about/rankings
+- image: assets/img/Best-100-Companies.png
+  href: https://www.sheffield.ac.uk/themes/custom/uos/images/Best-100-Companies.png
+- image: assets/img/Open_Logo_Email.png
+  href: https://www.sheffield.ac.uk/hr/equality/open
+
