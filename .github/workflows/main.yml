@@ -26,13 +26,12 @@ jobs:
       # Install Jekyll and theme
       - name: Install Jekyll and the base theme
         run: |
-            sudo apt-get install -y ruby-full build-essential zlib1g-dev
             echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
             echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
             echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
             source ~/.bashrc
-            sudo gem install jekyll bundler
-            sudo gem install jekyll-theme-cayman
+            gem install jekyll bundler
+            gem install jekyll-theme-cayman
 
       # Build site
       - name: Build the site.
