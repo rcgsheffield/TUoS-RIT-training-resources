@@ -34,7 +34,7 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.0.8
         with:
-          args: --verbose --no-progress **/*.md **/*.html
+          args: --exclude "https://crs.shef.ac.uk" --verbose --no-progress _site/*.md _site/*.html
         
       - name: Create Issue From File
         uses: peter-evans/create-issue-from-file@v3
