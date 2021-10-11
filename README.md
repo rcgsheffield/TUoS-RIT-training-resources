@@ -55,6 +55,8 @@ Please file a PR with your event added to the ``_data/links.yml`` file. We will 
 
 This site was forked from  pawseysc.github.io - much appreciated for the nice starting point and the list of external resources.
 
+-----
+
 ## Licensing
 
 The same as pawseysc.github.io, the MIT license as shown in ``LICENSE.md``.
