@@ -7,33 +7,23 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  jekyll:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      # Install Jekyll and theme
-      - name: Install Jekyll and the base theme
-        run: |
-            sudo apt-get install -y ruby-full build-essential zlib1g-dev
-            echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-            echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
-            echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
-            source ~/.bashrc
-            sudo gem install jekyll bundler
-            sudo gem install jekyll-theme-cayman
+    # Use GitHub Actions' cache to shorten build times and decrease load on servers
+    - uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
 
-      # Build site
-      - name: Build the site.
-        run: jekyll build
+    # Standard usage
+    - uses:  helaili/jekyll-action@v2
+      with:
+        build_only: true
