@@ -1,8 +1,8 @@
 links:
 - title: HPC Documentation
   url: https://docs.hpc.shef.ac.uk/en/latest/
-- title: Research IT @ TUoS GitHub
-  url: https://github.com/rcgsheffield
+- title: Contribute to the site @ TUoS GitHub
+  url: "{{ site.repository_url }}"
 - title: Research IT Course Registration System
   url: https://crs.shef.ac.uk
 - title: Research IT @ TUoS Main Site 
