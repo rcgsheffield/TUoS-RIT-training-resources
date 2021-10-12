@@ -12,33 +12,10 @@
     <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="assets/css/style.css" rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/search.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-
-    $(document).ready(function() {
-        var fixmeTop = $('.main-content-search').offset().top;       // get initial position of the element
-
-      $(window).scroll(function() {                  // assign scroll event listener
-
-          var currentScroll = $(window).scrollTop(); // get current position
-
-          if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-              $('.main-content-search').css({                      // scroll to that element or below it
-                  position: 'fixed',
-                  top: 10,                        //  This gives the top sticky plus a margin of 10px from it.
-              });
-          } else {                                   // apply position: static
-              $('.main-content-search').css({                      // if you scroll above it
-                  position: 'static'
-              });
-          }
-
-      });
-    }); 
-    </script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/scrollSidebar.js"></script>
 
   </head>
   <body>

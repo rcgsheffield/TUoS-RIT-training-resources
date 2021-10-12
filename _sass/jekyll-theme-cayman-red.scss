@@ -337,6 +337,9 @@ border-radius: 5px;
     .highlight {
     margin-top:65px;
     }
+    .main-content-search {
+      width: 12.5%;
+    }
   }
 
   .highlight {
@@ -459,12 +462,12 @@ border-radius: 5px;
 
 .main-content-search {
   float: left;
-  width: 15%; 
+  width: 14.5%; 
   font-size: small;
   padding: 10px;
   background-color: white;
   border-radius: 5px;
-  max-width:212px;
+  max-width:180px;
 }
 
 .search-label {
@@ -484,7 +487,7 @@ border-radius: 5px;
 
 .main-content-table {
   float: right; 
-  width: 83.5%;
+  width: 84.5%;
   min-height: 468px;
   border-radius: 5px;
   background-color: white;
