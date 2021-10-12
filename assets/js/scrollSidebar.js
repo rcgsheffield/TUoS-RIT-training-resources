@@ -1,16 +1,9 @@
 $(document).ready(function() {
     var fixmeTop = $('.main-content-search').offset().top;       // get initial position of the element
     var topOfFooter = $('.site-footer').position().top;
-    var topOfFooterOffset = topOfFooter - 500;
   $(window).scroll(function() {                  // assign scroll event listener
 
       var currentScroll = $(window).scrollTop(); // get current position
-
-      var currentScroll = $(document).scrollTop() ;
-      var scrollDistanceFromTopOfFooter = currentScroll - topOfFooter;
-      console.log("cScroll:",currentScroll);
-      console.log("fOffset:",topOfFooterOffset);
-
       if (currentScroll >= ($('.site-footer').position().top -468 )) { 
         console.log("TRIGGERED");
         $('.main-content-search').css({                      // if you scroll above it
