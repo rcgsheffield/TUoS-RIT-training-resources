@@ -1,0 +1,64 @@
+  @-webkit-keyframes blue-flash {
+    60% {
+        background: #fff ;
+      }
+      70% {
+        background:rgba(87, 160, 255, 0.8);
+      }
+      80% {
+          background: #fff ;
+        }
+      90% {
+      background:rgba(87, 160, 255, 0.8);
+      }
+      100% {
+          background: #fff ;
+      }
+    }
+  @-moz-keyframes blue-flash {
+    60% {
+        background: #fff ;
+      }
+      70% {
+        background:rgba(87, 160, 255, 0.8);
+      }
+      80% {
+          background: #fff ;
+        }
+      90% {
+      background:rgba(87, 160, 255, 0.8);
+      }
+      100% {
+          background: #fff ;
+      }
+    }
+  @keyframes blue-flash {
+    60% {
+      background: #fff ;
+    }
+    70% {
+      background:rgba(87, 160, 255, 0.8);
+    }
+    80% {
+        background: #fff ;
+      }
+    90% {
+    background:rgba(87, 160, 255, 0.8);
+    }
+    100% {
+        background: #fff ;
+    }
+  }
+  #flash-it {
+    -webkit-animation: blue-flash 2.5s linear alternate 0.5s;
+    -moz-animation: blue-flash 2.5s linear alternate 0.5s;
+    -o-animation: blue-flash 2.5s linear alternate 0.5s;
+    animation: blue-flash 2.5s linear alternate 0.5s;
+  }
+
+  #flash-it-delayed {
+    -webkit-animation: blue-flash 2.5s linear alternate 3.0s;
+    -moz-animation: blue-flash 2.5s linear alternate 3.0s;
+    -o-animation: blue-flash 2.5s linear alternate 3.0s;
+    animation: blue-flash 2.5s linear alternate 3.0s;
+  }

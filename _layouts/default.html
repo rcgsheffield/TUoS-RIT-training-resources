@@ -12,6 +12,7 @@
     <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/flash.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/search.js"></script>
@@ -40,49 +41,60 @@
         <div>
           <input id="searchInput" type="text" placeholder="Search..." style="width: 98%;">
         </div>
-        <div class="search-label">
-          <label>Level</label>
+        <div style="padding: 5px;" > 
+          <div class="search-label">
+            <label>Level</label>
+          </div>
+          <div class="search-criteria">
+            <input type="checkbox" id="core" name="core" value="Core">
+            <label for="core">Core</label><br>
+            <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
+            <label for="intermediate">Intermediate</label><br>
+            <input type="checkbox" id="advanced" name="advanced" value="Advanced">
+            <label for="advanced">Advanced</label>
+          </div>
         </div>
-        <div class="search-criteria">
-          <input type="checkbox" id="core" name="core" value="Core">
-          <label for="core">Core</label><br>
-          <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
-          <label for="intermediate">Intermediate</label><br>
-          <input type="checkbox" id="advanced" name="advanced" value="Advanced">
-          <label for="advanced">Advanced</label>
+
+        <div style="padding: 5px;" > 
+          <div class="search-label">
+            <label>Topic</label>
+          </div>
+          <div class="search-criteria">
+            <input type="checkbox" id="hpc" name="hpc" value="hpc">
+            <label for="home">High Performance Computing</label><br>
+            <input type="checkbox" id="data" name="data" value="Data">
+            <label for="home">Data</label><br>
+            <input type="checkbox" id="cloud" name="cloud" value="Cloud">
+            <label for="home">Cloud</label><br>
+            <input type="checkbox" id="visualisation" name="visualisation" value="Visualisation">
+            <label for="home">Visualisation</label><br>
+            <input type="checkbox" id="containers" name="containers" value="Containers">
+            <label for="home">Containers</label><br>
+            <input type="checkbox" id="domains" name="domains" value="Domains">
+            <label for="home">Domains</label><br>
+            <input type="checkbox" id="ml" name="ml" value="ml">
+            <label for="home">Machine Learning</label><br>
+          </div>
         </div>
-        <div class="search-label">
-          <label>Topic</label>
-        </div>
-        <div class="search-criteria">
-          <input type="checkbox" id="hpc" name="hpc" value="hpc">
-          <label for="home">High Performance Computing</label><br>
-          <input type="checkbox" id="data" name="data" value="Data">
-          <label for="home">Data</label><br>
-          <input type="checkbox" id="cloud" name="cloud" value="Cloud">
-          <label for="home">Cloud</label><br>
-          <input type="checkbox" id="visualisation" name="visualisation" value="Visualisation">
-          <label for="home">Visualisation</label><br>
-          <input type="checkbox" id="containers" name="containers" value="Containers">
-          <label for="home">Containers</label><br>
-          <input type="checkbox" id="domains" name="domains" value="Domains">
-          <label for="home">Domains</label><br>
-          <input type="checkbox" id="ml" name="ml" value="ml">
-          <label for="home">Machine Learning</label><br>
-        </div>
-        <div class="search-label">
-          <label>Provider</label>
-        </div>
-        <div class="search-criteria">
-          <input type="checkbox" id="pawsey" name="pawsey" value="Pawsey">
-          <label for="home">Pawsey</label><br>
-          <input type="checkbox" id="external" name="external" value="External">
-          <label for="home">External</label><br>
-          <input type="checkbox" id="sheffield-rit" name="sheffield-rit" value="sheffield-rit">
-          <label for="home">Sheffield-RIT</label><br>
-          <input type="checkbox" id="sheffield-rse" name="sheffield-rse" value="sheffield-rse">
-          <label for="home">Sheffield-RSE</label><br>
-        </div>
+
+
+        <div id="flash-it" style="margin-top: 20px; border:2px; border-radius:5px ; padding: 5px;" >
+          <div>
+            <label style="font-weight: bold;">Provider</label>
+          </div>
+          <div class="search-criteria">
+            <input type="checkbox" id="pawsey" name="pawsey" value="Pawsey">
+            <label for="home">Pawsey</label><br>
+            <div id="flash-it-delayed">
+              <input type="checkbox" id="external" name="external" value="External">
+              <label for="home">External</label><br>
+            </div>
+            <input type="checkbox" id="sheffield-rit" name="sheffield-rit" value="sheffield-rit">
+            <label for="home">Sheffield-RIT</label><br>
+            <input type="checkbox" id="sheffield-rse" name="sheffield-rse" value="sheffield-rse">
+            <label for="home">Sheffield-RSE</label><br>
+          </div>
+      </div>
       </div>
       <div class="main-content-table">
 
