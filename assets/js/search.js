@@ -36,15 +36,27 @@ $(document).ready(function() {
     filterResults();
   });
 
-  $('#domains').click(function() {
+  $('#chemistry').click(function() {
+    filterResults();
+  });
+
+  $('#fea').click(function() {
+    filterResults();
+  });
+
+  $('#nlp').click(function() {
+    filterResults();
+  });
+
+  $('#bio').click(function() {
+    filterResults();
+  });
+  
+  $('#cfd').click(function() {
     filterResults();
   });
 
   $('#ml').click(function() {
-    filterResults();
-  });
-
-  $('#pawsey').click(function() {
     filterResults();
   });
 
@@ -80,17 +92,20 @@ $(document).ready(function() {
       isCloud = $('#cloud').is(':checked');
       isVisualisation = $('#visualisation').is(':checked');
       isContainers = $('#containers').is(':checked');
-      isDomains = $('#domains').is(':checked');
+      isChemistry = $('#chemistry').is(':checked');
+      isFEA = $('#fea').is(':checked');
+      isNLP = $('#nlp').is(':checked');
+      isBiology = $('#bio').is(':checked');
+      isCFD = $('#cfd').is(':checked');
       isML = $('#ml').is(':checked');
-      noTopic = ( !isHPC && !isData && !isCloud && !isVisualisation && !isContainers && !isDomains && !isML );
+      noTopic = ( !isHPC && !isData && !isCloud && !isVisualisation && !isContainers && !isChemistry && !isFEA && !isNLP && !isBiology && !isCFD  && !isML );
       
-      isPawsey = $('#pawsey').is(':checked');
       isExternal = $('#external').is(':checked');
       isSheffieldRIT = $('#sheffield-rit').is(':checked');
       isSheffieldRSE = $('#sheffield-rse').is(':checked');
-      noProvider = ( !isPawsey && !isExternal && !isSheffieldRIT && !isSheffieldRSE);
+      noProvider = ( !isExternal && !isSheffieldRIT && !isSheffieldRSE);
       
-      if (isCore || isIntermediate || isAdvanced || isHPC || isData || isCloud || isVisualisation || isContainers || isDomains || isML || isPawsey || isExternal || isSheffieldRIT || isSheffieldRSE) 
+      if (isCore || isIntermediate || isAdvanced || isHPC || isData || isCloud || isVisualisation || isContainers || isChemistry || isFEA || isNLP || isBiology || isCFD || isML || isExternal || isSheffieldRIT || isSheffieldRSE) 
       {
         tag = $(this).find("td:eq(1)").html().toLowerCase();        
         if ( ( searchValue == "" || text.indexOf(searchValue) > -1 ) &&
@@ -103,14 +118,20 @@ $(document).ready(function() {
             (isCloud && tag.indexOf('cloud') > -1) ||
             (isVisualisation && tag.indexOf('visualisation') > -1) ||
             (isContainers && tag.indexOf('containers') > -1) ||
-            (isDomains && tag.indexOf('domains') > -1) ||
+            (isChemistry && tag.indexOf('chemistry') > -1) ||
+            (isFEA && tag.indexOf('fea') > -1) ||
+            (isNLP && tag.indexOf('nlp') > -1) ||
+            (isBiology && tag.indexOf('bio') > -1) ||
+            (isCFD && tag.indexOf('cfd') > -1) ||
             (isML && tag.indexOf('ml') > -1) ||
             noTopic ) &&
-            ( (isPawsey && tag.indexOf('pawsey') > -1) ||
+            ( 
             (isExternal && tag.indexOf('external') > -1) ||
             (isSheffieldRIT && tag.indexOf('sheffield-rit') > -1) ||
             (isSheffieldRSE && tag.indexOf('sheffield-rse') > -1) ||
-            noProvider ) )
+            noProvider 
+            ) 
+            )
         {
           $(this).toggle(true);
         }

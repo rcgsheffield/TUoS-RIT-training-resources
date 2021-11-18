@@ -2,17 +2,17 @@
 
 ##  What is this site?
 
-This is a website to organise and allow filtering of training resources used by researchers and students at the University of Sheffield. Provided by Research IT from IT Services.
+This is a website to organise / allow filtering of training resources and provide a useful index for researchers and students at the University of Sheffield. Provided by Research IT from IT Services @TUoS.
 
 -----
 
 ## How to modify the generated website
 
-* To add training links please look at the ``_data/links.yml`` file.
-* To change the external links (i.e. those in the footer) please edit the ``_data/externalLinks.yml`` file.
+* To add training links please look at the ``_data/links`` folder, each YAML file in this folder will be parsed. Ensure the same structure from the ``test_links.yaml`` is used..
+* To change the external links (i.e. those in the footer) please edit the ``_data/externalWebsiteLinks.yml`` file.
 * Adjustments to the theme / page can be made by editing both ``_layouts/default.html`` and  ``_sass/jekyll-theme-cayman-red.scss ``
 * Please add assets such as CSS, JS or images in the appropriate subdirectory of ``assets``.
-* Other configuration files control aspects of the Jekyll generation of pages e.g.  ``_config.yml``,  ``_data/pages.yml`` and ``training.md``.
+* Other configuration files control aspects of the Jekyll generation of pages e.g.  ``_config.yml``,  ``_data/pages.yml``, ``training.md`` and files in the ``_sass`` folder.
 
 -----
 

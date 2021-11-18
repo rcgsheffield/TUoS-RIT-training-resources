@@ -1,6 +1,5 @@
 tableData:
 
-# Core
 - title: Introduction to the Pawsey Supercomputing Centre
   description: Advancing science through supercomputing.
   pageName: training.md
@@ -10,7 +9,7 @@ tableData:
     - Data
     - Cloud
     - Visualisation
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20Pawsey.pdf?api=v2
   vid: https://www.youtube.com/watch?v=j2JFCsvsH1g&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=2
 
@@ -19,7 +18,7 @@ tableData:
   pageName: training.md
   level: Core
   topic: HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Pawsey%20Merit%20Allocation%20Training%202021.pdf?api=v2
   vid: https://www.youtube.com/watch?v=XpAg5zsNu3g
 
@@ -28,7 +27,7 @@ tableData:
   pageName: training.md
   level: Core
   topic: HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart1V01.pdf?api=v2
   vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
   git: https://github.com/PawseySC/Introductory-Supercomputing
@@ -38,7 +37,7 @@ tableData:
   pageName: training.md
   level: Core
   topic: HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart2V01.pdf?api=v2
   vid: https://www.youtube.com/watch?v=l-S_dzCHcKk&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
   git: https://github.com/PawseySC/Introductory-Supercomputing
@@ -48,7 +47,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Intermediate%20Supercomputing.pdf?api=v2
   git: https://github.com/PawseySC/Intermediate-Supercomputing
 
@@ -56,7 +55,7 @@ tableData:
   description: Pawsey version of the Introduction to Unix SW Carpentry material.
   pageName: training.md
   level: Core
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/shell-hpc
   git: https://github.com/PawseySC/shell-hpc
 
@@ -65,7 +64,7 @@ tableData:
   pageName: training.md
   level: Core
   topic: Cloud
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/using-nimbus
   vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aYar4Fpust_u3mpDt07T2jl
   git: https://github.com/PawseySC/using-nimbus
@@ -75,7 +74,7 @@ tableData:
   pageName: training.md
   level: Core
   topic: Visualisation
-  provider: Pawsey
+  provider: External
   url: https://vis.pawsey.org.au/training
   ppt: https://vis.pawsey.org.au/training/intro-to-remotevis
   vid: https://www.youtube.com/watch?v=aZgyjpsglSU&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=4
@@ -85,7 +84,7 @@ tableData:
   pageName: training.md
   level: Core
   topic: Visualisation
-  provider: Pawsey
+  provider: External
   url: https://vis.pawsey.org.au/training
   ppt: https://vis.pawsey.org.au/training/paraview-part1/#/
 
@@ -94,17 +93,16 @@ tableData:
   pageName: training.md
   level: Core
   topic: Visualisation
-  provider: Pawsey
+  provider: External
   url: https://vis.pawsey.org.au/training
   ppt: https://vis.pawsey.org.au/training/paraview-part2/#/
 
-# Developer
 - title: Develop with MPI
   description: Introduction to parallel programming with MPI.
   pageName: training.md
   level: Advanced
   topic: HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20MPI.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-MPI
 
@@ -113,7 +111,7 @@ tableData:
   pageName: training.md
   level: Advanced
   topic:  HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20OpenMP.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-OpenMP
 
@@ -122,7 +120,7 @@ tableData:
   pageName: training.md
   level: Advanced
   topic:  HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/GPU%20Programming%20Essentials.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-CUDA
 
@@ -131,7 +129,7 @@ tableData:
   pageName: training.md
   level: Advanced
   topic:  HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20OpenACC.pdf?api=v2
   git: https://github.com/PawseySC/Develop-with-OpenACC
 
@@ -140,17 +138,16 @@ tableData:
   pageName: training.md
   level: Advanced
   topic:  HPC
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Optimising%20Serial%20Code.pdf?api=v2
   git: https://github.com/PawseySC/Optimising-Serial-Code
 
-# Containers
 - title: Webinar and Tutorial Series on Containers, June 2020
   description: Software portability, data reproducibility, scaling to HPC. This series answers key questions about containers.
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/singularity-containers
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Containers%20on%20HPC%20and%20Cloud%20with%20Singularity.pdf?api=v2
   vid: https://www.youtube.com/playlist?list=PLmu61dgAX-abfDjX1gugQh60AJRIpDrVz
@@ -161,7 +158,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/containers-openfoam-workshop
   vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aZS9kbcuKpRtLswApf49Z4D
   git: https://github.com/PawseySC/containers-openfoam-workshop-scripts
@@ -171,7 +168,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/containers-bioinformatics-workshop
   vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aYkz4rAl-nqmUfq_u9YUoFn
   git: https://github.com/PawseySC/containers-bioinformatics-workshop
@@ -181,7 +178,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/containers-astro-python-workshop
   vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aaIQibfUlxpy0Qz453jaLzl
   git: https://github.com/PawseySC/containers-astro-python-workshop
@@ -191,7 +188,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/sc19-containers
   git: https://github.com/pawseysc/sc19-containers
 
@@ -200,7 +197,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/container-workflows
   git: https://github.com/PawseySC/container-workflows
 
@@ -209,7 +206,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   url: https://pawseysc.github.io/docker-resbaz19
   git: https://github.com/PawseySC/docker-resbaz19
 
@@ -218,7 +215,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   git: https://github.com/PawseySC/bio-workshop-18
 
 - title: Overview of Containers in HPC
@@ -226,17 +223,16 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Containers
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Overview%20of%20Containers%20in%20HPC.pdf?api=v2
   git: https://github.com/PawseySC/Overview-of-Containers-in-HPC
 
-# Misc Webinars
 - title: Cosmic Machines
   description: Introductory workshop for Machine Learning in observational astronomy.
   pageName: training.md
   level: Intermediate
   topic: Data
-  provider: Pawsey
+  provider: External
   git: https://github.com/PawseySC/cosmic-machines
 
 - title: Using Python in HPC
@@ -244,7 +240,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic:  HPC
-  provider: Pawsey
+  provider: External
   git: https://github.com/PawseySC/Using-Python-in-HPC
 
 - title: Data Intensive Workflows
@@ -252,11 +248,10 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: Data
-  provider: Pawsey
+  provider: External
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Data%20Intensive%20Workflows%20in%20HPC.pdf?api=v2
   git: https://github.com/PawseySC/data-intensive-workflows
 
-# External
 - title: Nextflow Training Workshop 2020
   description: Nextflow enables scalable and reproducible scientific workflows. This workshop is a deep dive into its most prominent features.
   pageName: training.md
@@ -301,7 +296,7 @@ tableData:
   description: This is a series of virtual and interactive classes, each one focused on a specific theme ranging from basic concepts to advanced topics in molecular simulations.
   pageName: training.md
   level: Intermediate
-  topic: Domains
+  topic: Chemistry
   provider: External
   url: https://www.plumed.org/masterclass
   vid: https://www.plumed.org/masterclass
@@ -311,7 +306,7 @@ tableData:
   description: The workshop and symposium include a beginner tutorial on LAMMPS,scientific presentations, and developer sessions.
   pageName: training.md
   level: Intermediate
-  topic: Domains
+  topic: Chemistry
   provider: External
   url: https://www.lammps.org/workshops/Aug21
   ppt: https://www.lammps.org/workshops/Aug21/
@@ -321,7 +316,7 @@ tableData:
   description: The school provides an introduction to materials and molecular modelling with Quantum ESPRESSO.
   pageName: training.md
   level: Intermediate
-  topic: Domains
+  topic: Chemistry
   provider: External
   url: https://indico.ictp.it/event/9616
   ppt: https://indico.ictp.it/event/9616/other-view?view=ictptimetable
@@ -442,3 +437,4 @@ tableData:
   topic: Data,HPC,ML
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
+
