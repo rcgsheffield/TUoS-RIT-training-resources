@@ -1,0 +1,253 @@
+tableData:
+
+- title: Introduction to the Pawsey Supercomputing Centre
+  description: Advancing science through supercomputing.
+  pageName: training.md
+  level: Core
+  topic: 
+    - HPC
+    - Data
+    - Cloud
+    - Visualisation
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20Pawsey.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=j2JFCsvsH1g&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=2
+
+- title: Pawsey Merit Allocation Training 2022
+  description: Setonix overview and merit allocation schemes for 2022.
+  pageName: training.md
+  level: Core
+  topic: HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Pawsey%20Merit%20Allocation%20Training%202021.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=XpAg5zsNu3g
+
+- title: Using Supercomputers – Part 1
+  description: Part 1 - Beginners training outlining the major characteristics of a supercomputer, logging in, submitting a job and other key concepts.
+  pageName: training.md
+  level: Core
+  topic: HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart1V01.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
+  git: https://github.com/PawseySC/Introductory-Supercomputing
+
+- title: Using Supercomputers – Part 2
+  description: Part 2 - Beginners training outlining use of High Performance Storage, running jobs, real world HPC use and getting help.
+  pageName: training.md
+  level: Core
+  topic: HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart2V01.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=l-S_dzCHcKk&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
+  git: https://github.com/PawseySC/Introductory-Supercomputing
+
+- title: Intermediate Supercomputing
+  description: Intermediate course on developing MPI and OpenMP applications developed by the Pawsey Supercomputing Centre.
+  pageName: training.md
+  level: Intermediate
+  topic: HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Intermediate%20Supercomputing.pdf?api=v2
+  git: https://github.com/PawseySC/Intermediate-Supercomputing
+
+- title: Shell for HPC
+  description: Pawsey version of the Introduction to Unix SW Carpentry material.
+  pageName: training.md
+  level: Core
+  provider: External
+  url: https://pawseysc.github.io/shell-hpc
+  git: https://github.com/PawseySC/shell-hpc
+
+- title: Using the Nimbus Research Cloud Series
+  description: This course will introduce you to the use of Nimbus, the research cloud at Pawsey Supercomputing Centre.
+  pageName: training.md
+  level: Core
+  topic: Cloud
+  provider: External
+  url: https://pawseysc.github.io/using-nimbus
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aYar4Fpust_u3mpDt07T2jl
+  git: https://github.com/PawseySC/using-nimbus
+
+- title: Introducing Remote Visualisation
+  description: Introduction to remote visualisation facilities at Pawsey.
+  pageName: training.md
+  level: Core
+  topic: Visualisation
+  provider: External
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/intro-to-remotevis
+  vid: https://www.youtube.com/watch?v=aZgyjpsglSU&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=4
+
+- title: Visualising Data with ParaView Part 1
+  description: Visualisation using ParaView.
+  pageName: training.md
+  level: Core
+  topic: Visualisation
+  provider: External
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/paraview-part1/#/
+
+- title: Visualising Data with ParaView Part 2
+  description: Visualisation using ParaView.
+  pageName: training.md
+  level: Core
+  topic: Visualisation
+  provider: External
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/paraview-part2/#/
+
+- title: Develop with MPI
+  description: Introduction to parallel programming with MPI.
+  pageName: training.md
+  level: Advanced
+  topic: HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20MPI.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-MPI
+
+- title: Develop with OpenMP
+  description: Introduction to parallel programming with OpenMP.
+  pageName: training.md
+  level: Advanced
+  topic:  HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Parallelize%20your%20Code%20with%20OpenMP.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-OpenMP
+
+- title: Develop with CUDA
+  description: GPU programming essentials with CUDA.
+  pageName: training.md
+  level: Advanced
+  topic:  HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/GPU%20Programming%20Essentials.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-CUDA
+
+- title: Develop with OpenACC
+  description: Introduction to GPU programming with OpenACC.
+  pageName: training.md
+  level: Advanced
+  topic:  HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20OpenACC.pdf?api=v2
+  git: https://github.com/PawseySC/Develop-with-OpenACC
+
+- title: Optimising Serial Code
+  description: Introduction to serial code optimisation.
+  pageName: training.md
+  level: Advanced
+  topic:  HPC
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Optimising%20Serial%20Code.pdf?api=v2
+  git: https://github.com/PawseySC/Optimising-Serial-Code
+
+- title: Webinar and Tutorial Series on Containers, June 2020
+  description: Software portability, data reproducibility, scaling to HPC. This series answers key questions about containers.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  url: https://pawseysc.github.io/singularity-containers
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Containers%20on%20HPC%20and%20Cloud%20with%20Singularity.pdf?api=v2
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-abfDjX1gugQh60AJRIpDrVz
+  git: https://github.com/pawseysc/singularity-containers
+
+- title: Using Containers with OpenFOAM (workshop series), May 2020
+  description: Hands-on practice with the use of OpenFOAM containers for computational fluid dynamics on HPC.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  url: https://pawseysc.github.io/containers-openfoam-workshop
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aZS9kbcuKpRtLswApf49Z4D
+  git: https://github.com/PawseySC/containers-openfoam-workshop-scripts
+
+- title: Using Containers in Bioinformatics (workshop series), July 2020
+  description: This workshop provides an interactive forum to explore the merits, advantages and limitations of applying containers in bioinformatics.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  url: https://pawseysc.github.io/containers-bioinformatics-workshop
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aYkz4rAl-nqmUfq_u9YUoFn
+  git: https://github.com/PawseySC/containers-bioinformatics-workshop
+
+- title: Designing Containers for Python and Radio-Astronomy (tutorial series), September 2020
+  description: Hands-on practice with the development of Python containers for radio-astronomy on HPC.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  url: https://pawseysc.github.io/containers-astro-python-workshop
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aaIQibfUlxpy0Qz453jaLzl
+  git: https://github.com/PawseySC/containers-astro-python-workshop
+
+- title: Containers @SC19, November 2019
+  description: Tutorial on Singularity containers for HPC at SC19 in Denver (USA).
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  url: https://pawseysc.github.io/sc19-containers
+  git: https://github.com/pawseysc/sc19-containers
+
+- title: Container Workflows
+  description: Tutorial on containers in HPC and Cloud.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  url: https://pawseysc.github.io/container-workflows
+  git: https://github.com/PawseySC/container-workflows
+
+- title: Docker @ResBaz19, July 2019
+  description: Docker containers tutorial for ResBaz19 in Perth.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  url: https://pawseysc.github.io/docker-resbaz19
+  git: https://github.com/PawseySC/docker-resbaz19
+
+- title: Bio Workshop 18, September 2018
+  description: Pawsey workshop on containers for bioinformatics.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  git: https://github.com/PawseySC/bio-workshop-18
+
+- title: Overview of Containers in HPC
+  description: Pawsey Webinar on containers for HPC.
+  pageName: training.md
+  level: Intermediate
+  topic: Containers
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Overview%20of%20Containers%20in%20HPC.pdf?api=v2
+  git: https://github.com/PawseySC/Overview-of-Containers-in-HPC
+
+- title: Cosmic Machines
+  description: Introductory workshop for Machine Learning in observational astronomy.
+  pageName: training.md
+  level: Intermediate
+  topic: Data
+  provider: External
+  git: https://github.com/PawseySC/cosmic-machines
+
+- title: Using Python in HPC
+  description: Pawsey Webinar on Python for HPC.
+  pageName: training.md
+  level: Intermediate
+  topic:  HPC
+  provider: External
+  git: https://github.com/PawseySC/Using-Python-in-HPC
+
+- title: Data Intensive Workflows
+  description: Workshop on data-intensive workflows at Data Science Week 2019, featuring Slurm, Dask and Nextflow.
+  pageName: training.md
+  level: Intermediate
+  topic: Data
+  provider: External
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Data%20Intensive%20Workflows%20in%20HPC.pdf?api=v2
+  git: https://github.com/PawseySC/data-intensive-workflows
