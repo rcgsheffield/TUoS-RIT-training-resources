@@ -60,10 +60,6 @@ $(document).ready(function() {
     filterResults();
   });
 
-  $('#pawsey').click(function() {
-    filterResults();
-  });
-
   $('#external').click(function() {
     filterResults();
   });
@@ -104,13 +100,12 @@ $(document).ready(function() {
       isML = $('#ml').is(':checked');
       noTopic = ( !isHPC && !isData && !isCloud && !isVisualisation && !isContainers && !isChemistry && !isFEA && !isNLP && !isBiology && !isCFD  && !isML );
       
-      isPawsey = $('#pawsey').is(':checked');
       isExternal = $('#external').is(':checked');
       isSheffieldRIT = $('#sheffield-rit').is(':checked');
       isSheffieldRSE = $('#sheffield-rse').is(':checked');
-      noProvider = ( !isPawsey && !isExternal && !isSheffieldRIT && !isSheffieldRSE);
+      noProvider = ( !isExternal && !isSheffieldRIT && !isSheffieldRSE);
       
-      if (isCore || isIntermediate || isAdvanced || isHPC || isData || isCloud || isVisualisation || isContainers || isChemistry || isFEA || isNLP || isBiology || isCFD || isML || isPawsey || isExternal || isSheffieldRIT || isSheffieldRSE) 
+      if (isCore || isIntermediate || isAdvanced || isHPC || isData || isCloud || isVisualisation || isContainers || isChemistry || isFEA || isNLP || isBiology || isCFD || isML || isExternal || isSheffieldRIT || isSheffieldRSE) 
       {
         tag = $(this).find("td:eq(1)").html().toLowerCase();        
         if ( ( searchValue == "" || text.indexOf(searchValue) > -1 ) &&
@@ -130,11 +125,13 @@ $(document).ready(function() {
             (isCFD && tag.indexOf('cfd') > -1) ||
             (isML && tag.indexOf('ml') > -1) ||
             noTopic ) &&
-            ( (isPawsey && tag.indexOf('pawsey') > -1) ||
+            ( 
             (isExternal && tag.indexOf('external') > -1) ||
             (isSheffieldRIT && tag.indexOf('sheffield-rit') > -1) ||
             (isSheffieldRSE && tag.indexOf('sheffield-rse') > -1) ||
-            noProvider ) )
+            noProvider 
+            ) 
+            )
         {
           $(this).toggle(true);
         }
