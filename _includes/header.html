@@ -1,0 +1,29 @@
+<header>
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.bootstrap.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <!-- -->
+    <nav style="height: 40px; margin-bottom:20px;" class="navbar navbar-dark bg-dark shadow-sm ">
+    </nav>
+    
+  </header>
+  <div class="container-lg" style="margin-top:10px;">
+  <div class="row">
+    <div class="col-md-2 logo-holder">
+      <img style="width: 100%;" class="logo" src="assets/img/TUOS_PRIMARY_LOGO_FULL COLOUR.png">
+    </div>
+    <div class="col-md-9 align-self-end">
+      <div class="row align-items-center mt-auto">
+        <div class="title">
+          <p class="h1">Research IT - Training Resources Index</p>
+        </div>
+        <div class="shef_address">
+        <a href="https://www.sheffield.ac.uk">Home &gt;</a>
+        <a href="https://www.sheffield.ac.uk/it-services">IT Services &gt;</a>
+        <a href="https://www.sheffield.ac.uk/it-services/research">Research &gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  

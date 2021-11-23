@@ -1,43 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }} by TUoS</title>
-    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    {% if page.name == 'index.md' %}
-      <meta http-equiv = "refresh" content = "0; url = ./training.html" />
-    {% endif %}
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/flash.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/search.js"></script>
-    <script src="assets/js/scrollSidebar.js"></script>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  
 
-  </head>
-  <body>
-    <div class="admin">
-    </div>
-    <div class="main-content">
-      <div  class="project-tagline">
-        <div class="logo-holder">
-        <img class="logo" src="assets/img/TUOS_PRIMARY_LOGO_FULL COLOUR.png">
-        </div>
-        Research IT - Training Resources
-                <div class="shef_address">
-                  <a href="https://www.sheffield.ac.uk">Home &gt;</a>
-                  <a href="https://www.sheffield.ac.uk/it-services">IT Services &gt;</a>
-                  <a href="https://www.sheffield.ac.uk/it-services/research">Research &gt;</a>
-                </div>
-              </div>
-
-              <div class="highlight" style="margin-bottom:10px;"><pre>Please make your selection below with the search menu. We have pre-ticked to only include TUoS resources by default but further external resources are available.</pre></div>
-
-      <div class="main-content-search">
+  <body class="">
+      {%- include header.html -%}
+      <div class="container">
+      <div class="main-content row align-items-center">
+        <pre class="text-wrap" >Please make your selection below with the search menu. We have pre-ticked to only include TUoS resources by default but further external resources are available.</pre>
+      </div>
+      <div class="row align-items-start">
+      <div class="col-md-2 main-content-search sticky-top">
         <div>
           <input id="searchInput" type="text" placeholder="Search..." style="width: 98%;">
         </div>
@@ -61,7 +34,7 @@
           </div>
         </div>
 
-        <div style="padding: 5px;" > 
+        <div> 
           <div class="search-label">
             <label>Topic</label>
           </div>
@@ -114,7 +87,7 @@
         </div>
 
 
-        <div id="flash-it" style="margin-top: 20px; border:2px; border-radius:5px ; padding: 5px;" >
+        <div id="flash-it" style="margin-top: 20px; border:2px; padding: 5px;" >
           <div>
             <label style="font-weight: bold;">Provider</label>
           </div>
@@ -136,17 +109,18 @@
           </div>
       </div>
       </div>
-      <div class="main-content-table">
-
+      <div  class="col-md-10">
+        <div class="row align-items-center">
+        <div class="main-content-table">
         <table id="trainingTable">
           <colgroup>
-            <col width="20%" />
+            <col width="12%" />
             <col width="10%" />
             <col width="5%" />
             <col width="5%" />
             <col width="5%" />
             <col width="5%" />
-            <col width="55%" />
+            <col width="63%" />
           </colgroup>
           <thead>
           <tr class="header">
@@ -190,24 +164,16 @@
           </tbody>
         </table>
       </div>
+      </div>
+      </div>
     </div>
+  </div>
     
-      <footer class="site-footer">
-        <div class="external-links">
-          {% for externalLink in site.data.externalWebsiteLinks.links %}
-            <a href="{{ externalLink.url }}" target="_blank">{{ externalLink.title }}</a>
-          {% endfor %}
-          <a href="{{ site.github.repository_url }}" target="_blank">Contribute to the site @ TUoS GitHub</a>
-        </div>
-        <div class="external-links-icons">
-          {% for externalLinkIcon in site.data.externalLinks.linkImages %}
-            <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer"><img  style="height:140px;" src="{{ externalLinkIcon.image }}" alt=""></a>
-          {% endfor %}
-        </div>
-        <p>Copyright &copy; <a href="https://www.sheffield.ac.uk" target="_blank">The University of Sheffield</a> - <a href="https://www.sheffield.ac.uk/it-services/research" target="_blank">Research IT</a> <script>document.write(new Date().getFullYear())</script></p>
-      </footer>
+  {%- include footer.html -%}
     
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
