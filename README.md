@@ -31,19 +31,21 @@ source ~/.bashrc
 gem install jekyll bundler
 ```
 
-* Install the base theme:
+* Install the dependencies / theme:
 
 ```
-gem install jekyll-theme-cayman
+bundle install
 ```
 
 * Have Jekyll autobuild as you make changes:
 
 ```
-jekyll build --watch --incremental
+bundle exec jekyll serve --incremental
 ```
 
-* Open the site in your favorite browser - found in ``_site``
+* Open the site in your favorite browser 
+
+http://127.0.0.1:4000
 
 ## How to contribute / add your own resources
 
