@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {%- include head.html -%}
+{%- include head.html -%}
   
 
-  <body class="">
-      {%- include header.html -%}
-      <div class="container">
-      <div class="main-content row align-items-center">
-        <pre class="text-wrap" >Please make your selection below with the search menu. We have pre-ticked to only include TUoS resources by default but further external resources are available.</pre>
-      </div>
-      <div class="row align-items-start">
-      <div class="col-md-2 main-content-search sticky-top">
+<body class="">
+{%- include header.html -%}
+  <div class="container">
+    <div class="main-content row align-items-center">
+        <pre class="text-wrap shadow-sm" >Please make your selection below with the search menu. We have pre-ticked to only include TUoS resources by default but further external resources are available.</pre>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-md-2 main-content-search sticky-top shadow-sm">
         <div>
           <input id="searchInput" type="text" placeholder="Search..." style="width: 98%;">
         </div>
         <div style="padding: 5px;" > 
           <div class="search-label">
-            <label>Level</label>
+              <label>Level</label>
           </div>
           <div class="search-criteria">
             <div class="search-item">
@@ -107,73 +107,73 @@
               <label for="home">Sheffield-RSE</label><br>
             </div>
           </div>
-      </div>
+        </div>
       </div>
       <div  class="col-md-10">
         <div class="row align-items-center">
-        <div class="main-content-table">
-        <table id="trainingTable">
-          <colgroup>
-            <col width="12%" />
-            <col width="10%" />
-            <col width="5%" />
-            <col width="5%" />
-            <col width="5%" />
-            <col width="5%" />
-            <col width="63%" />
-          </colgroup>
-          <thead>
-          <tr class="header">
-            <th>Name</th>
-            <th>Tags</th>
-            <th>Home</th>
-            <th>Slides</th>
-            <th>Video</th>
-            <th>GitHub</th>
-            <th>Short Description</th>
-          </tr>
-          </thead>
-          <tbody id="pageTable">
-            {% for events in site.data.links %}
-            {% assign data = events[1] %}
-              {% for data in data.tableData %}
-                {% if data.pageName == page.name %}
-                  <tr>
-                    <td markdown="span">{{ data.title }}</td>
-                    <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
-                                        {% if data.topic != nil %}
-                                          <div><b>Topic:</b><br>
-                                            <div class="topics">
-                                            {% for topic in data.topic %}
-                                              {{ topic }}<br>
-                                            {% endfor %} 
-                                            </div>
-                                          </div>
-                                        {% endif %}
-                                        {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
-                    </td>
-                    <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
-                    <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint"></i></a>{% endif %}</td>
-                    <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %}</td>
-                    <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
-                    <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
-                  </tr>    
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      </div>
+          <div class="main-content-table">
+            <table class="shadow-sm" id="trainingTable">
+              <colgroup>
+                <col width="12%" />
+                <col width="10%" />
+                <col width="5%" />
+                <col width="5%" />
+                <col width="5%" />
+                <col width="5%" />
+                <col width="63%" />
+              </colgroup>
+              <thead>
+              <tr class="header">
+                <th>Name</th>
+                <th>Tags</th>
+                <th>Home</th>
+                <th>Slides</th>
+                <th>Video</th>
+                <th>GitHub</th>
+                <th>Short Description</th>
+              </tr>
+              </thead>
+              <tbody id="pageTable">
+                {% for events in site.data.links %}
+                {% assign data = events[1] %}
+                  {% for data in data.tableData %}
+                    {% if data.pageName == page.name %}
+                      <tr>
+                        <td markdown="span">{{ data.title }}</td>
+                        <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
+                                            {% if data.topic != nil %}
+                                              <div><b>Topic:</b><br>
+                                                <div class="topics">
+                                                {% for topic in data.topic %}
+                                                  {{ topic }}<br>
+                                                {% endfor %} 
+                                                </div>
+                                              </div>
+                                            {% endif %}
+                                            {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
+                        </td>
+                        <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint"></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
+                        <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
+                      </tr>    
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>
     
-  {%- include footer.html -%}
+{%- include footer.html -%}
 
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+</body>
 </html>
