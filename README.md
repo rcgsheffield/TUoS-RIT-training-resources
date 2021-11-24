@@ -49,7 +49,7 @@ http://127.0.0.1:4000
 
 ## How to contribute / add your own resources
 
-Please file a PR with your event added to the ``_data/links.yml`` file. We will then review it and add it to the links.
+Please file a PR with your event added to one of the ``_data/links/*.yaml`` files. We will then review it and add it to the links.
 
 -----
 
