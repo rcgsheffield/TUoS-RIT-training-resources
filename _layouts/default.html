@@ -126,8 +126,8 @@
               <tr class="header">
                 <th>Name</th>
                 <th>Tags</th>
-                <th>Home</th>
-                <th>Slides</th>
+                <th>Course Link</th>
+                <th>Course Materials / Slides</th>
                 <th>Video</th>
                 <th>GitHub</th>
                 <th>Short Description</th>
@@ -152,8 +152,8 @@
                                             {% endif %}
                                             {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
                         </td>
-                        <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
-                        <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint"></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-external-link-square-alt"></i></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-download"></i></a>{% endif %}</td>
                         <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %}</td>
                         <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
                         <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
