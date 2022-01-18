@@ -1,0 +1,37 @@
+tableData:
+
+- title: "CIC6005: Fortran Programming"
+  description: "Fortran is a computer language particularly suited to the development of high performance applications for simulation and analysis. Although in recent years Java and C/C++ have gained in popularity, Fortran still remains the most suitable programming language for science and engineering applications. The course provides an introduction to fortran90. It also covers data management, file management and the use of the NAG Numerical Library. If there is time, the course reviews advanced features such as memory management and advanced file handling."
+  pageName: training.md
+  level: Core
+  topic: DDP
+  provider: Sheffield-RIT
+  url: https://www.sheffield.ac.uk/rs/ddpportal/reg
+  ppt: http://rcg.group.shef.ac.uk/courses/cic6005/
+
+- title: "CIC6006: C/C++ Programming"
+  description: "The C programming language is used to develop the UNIX operating system and is ideal for developing high performance applications. This hands-on course provides an introduction to the C programming language and enables users to develop applications using that language. The course also considers advanced issues in C programming such as file handling, memory management, data structures, utilities for application development and using scientific libraries such as BLAS and LAPACK."
+  pageName: training.md
+  level: Core
+  topic: DDP
+  provider: Sheffield-RIT
+  url: https://www.sheffield.ac.uk/rs/ddpportal/reg
+  ppt: http://rcg.group.shef.ac.uk/courses/cic6006/
+
+- title: "CIC6007: MATLAB Application Programming"
+  description: "Matlab is one of the major scientific and engineering programming, modelling and visualisation applications available on all major platforms. It contains powerful programming elements and visualisation tools that allow the user to develop complex computational and visualisation applications all within a single environment, using state of the art user interfaces. It can also be enhanced by a variety of optional specialised applications called 'toolboxes' some of which are also available at the University of Sheffield. This course is for people who want to develop state of the art scientific applications with strong visual context as rapidly as possible The course is run on PCs, but is equally valid for Unix, Linux and Mac users. "
+  pageName: training.md
+  level: Core
+  topic: DDP
+  provider: Sheffield-RIT
+  url: https://www.sheffield.ac.uk/rs/ddpportal/reg
+  ppt: http://rcg.group.shef.ac.uk/courses/cic6007/
+
+- title: "CIC6010: Introduction to Programming using Python"
+  description: "Python is a widely used open source, high-level programming language. The design philosophy of the Python language provides code readability. The syntax allows programmers to express concepts in fewer lines of code than possible in low-level languages such as C/C++, Fortran or Java. This course provides a general introduction to the basic concepts of the Python programming language. The course is an ideal choice for people who are starting to learn programming."
+  pageName: training.md
+  level: Core
+  topic: DDP
+  provider: Sheffield-RIT
+  url: https://www.sheffield.ac.uk/rs/ddpportal/reg
+  ppt: http://rcg.group.shef.ac.uk/courses/python/
