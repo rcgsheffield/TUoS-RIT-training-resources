@@ -60,6 +60,10 @@ $(document).ready(function() {
     filterResults();
   });
 
+  $('#ddp').click(function() {
+    filterResults();
+  });
+
   $('#external').click(function() {
     filterResults();
   });
@@ -98,14 +102,15 @@ $(document).ready(function() {
       isBiology = $('#bio').is(':checked');
       isCFD = $('#cfd').is(':checked');
       isML = $('#ml').is(':checked');
-      noTopic = ( !isHPC && !isData && !isCloud && !isVisualisation && !isContainers && !isChemistry && !isFEA && !isNLP && !isBiology && !isCFD  && !isML );
+      isDDP = $('#ddp').is(':checked');
+      noTopic = ( !isHPC && !isData && !isCloud && !isVisualisation && !isContainers && !isChemistry && !isFEA && !isNLP && !isBiology && !isCFD  && !isML && !isDDP );
       
       isExternal = $('#external').is(':checked');
       isSheffieldRIT = $('#sheffield-rit').is(':checked');
       isSheffieldRSE = $('#sheffield-rse').is(':checked');
       noProvider = ( !isExternal && !isSheffieldRIT && !isSheffieldRSE);
       
-      if (isCore || isIntermediate || isAdvanced || isHPC || isData || isCloud || isVisualisation || isContainers || isChemistry || isFEA || isNLP || isBiology || isCFD || isML || isExternal || isSheffieldRIT || isSheffieldRSE) 
+      if (isCore || isIntermediate || isAdvanced || isHPC || isData || isCloud || isVisualisation || isContainers || isChemistry || isFEA || isNLP || isBiology || isCFD || isML || isDDP || isExternal || isSheffieldRIT || isSheffieldRSE) 
       {
         tag = $(this).find("td:eq(1)").html().toLowerCase();        
         if ( ( searchValue == "" || text.indexOf(searchValue) > -1 ) &&
@@ -124,6 +129,7 @@ $(document).ready(function() {
             (isBiology && tag.indexOf('bio') > -1) ||
             (isCFD && tag.indexOf('cfd') > -1) ||
             (isML && tag.indexOf('ml') > -1) ||
+            (isDDP && tag.indexOf('ddp') > -1) ||
             noTopic ) &&
             ( 
             (isExternal && tag.indexOf('external') > -1) ||
