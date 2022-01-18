@@ -6,7 +6,7 @@ tableData:
   level: Core
   topic: DDP
   provider: Sheffield-RIT
-  url: https://www.sheffield.ac.uk/rs/ddpportal/reg
+  url: https://www.eventbrite.co.uk/e/development-for-hpc-with-the-fortran-programming-languageits6005-2021-2022-tickets-249198037037
   ppt: http://rcg.group.shef.ac.uk/courses/cic6005/
 
 - title: "CIC6006: C/C++ Programming"
@@ -15,7 +15,7 @@ tableData:
   level: Core
   topic: DDP
   provider: Sheffield-RIT
-  url: https://www.sheffield.ac.uk/rs/ddpportal/reg
+  url: https://www.eventbrite.co.uk/e/application-development-for-hpc-with-the-c-programming-language-2021-2022-tickets-249190765287
   ppt: http://rcg.group.shef.ac.uk/courses/cic6006/
 
 - title: "CIC6007: MATLAB Application Programming"
@@ -24,7 +24,7 @@ tableData:
   level: Core
   topic: DDP
   provider: Sheffield-RIT
-  url: https://www.sheffield.ac.uk/rs/ddpportal/reg
+  url: https://www.eventbrite.co.uk/e/application-development-using-matlabits6007-2021-2022-tickets-250000386887
   ppt: http://rcg.group.shef.ac.uk/courses/cic6007/
 
 - title: "CIC6010: Introduction to Programming using Python"
