@@ -1,4 +1,8 @@
+collections: 
+    ddp_courses: 
+        output: true
+
 plugins:
   - jekyll-remote-theme
+  - jekyll-spaceship
 remote_theme: jonaharagon/jekyll-bootstrap-theme
-
