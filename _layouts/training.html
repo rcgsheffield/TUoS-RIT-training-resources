@@ -122,18 +122,14 @@
                 <col width="10%" />
                 <col width="5%" />
                 <col width="5%" />
-                <col width="5%" />
-                <col width="5%" />
-                <col width="63%" />
+                <col width="73%" />
               </colgroup>
               <thead>
               <tr class="header">
                 <th>Name</th>
                 <th>Tags</th>
-                <th>Course Link</th>
-                <th>Course Materials / Slides</th>
-                <th>Video</th>
-                <th>GitHub</th>
+                <th>Course Home Page</th>
+                <th>Course Materials Links</th>
                 <th>Short Description</th>
               </tr>
               </thead>
@@ -156,10 +152,8 @@
                                             {% endif %}
                                             {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
                         </td>
-                        <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-external-link-square-alt"></i></i></a>{% endif %}</td>
-                        <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-download"></i></a>{% endif %}</td>
-                        <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %}</td>
-                        <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-edit"></i></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-link"></i></a>{% endif %} {% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %} {% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
                         <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
                       </tr>    
                     {% endif %}
