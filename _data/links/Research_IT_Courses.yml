@@ -4,7 +4,8 @@ tableData:
   description: "This course is a single 3 hour practical session providing a hands on introduction to the unix/linux operating system. The course provides training in using and understanding how to use and access applications running on remote machines such as those provided by the White Rose Grid. Students will gain an understanding of using UNIX/LINUX, secure shell protocols (such as ssh, scp and sftp). "
   pageName: training.md
   level: Core
-  topic:  HPC
+  topic: 
+    - HPC
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/linux/
@@ -13,7 +14,8 @@ tableData:
   description: "This course is a single 3 hour session providing a hands on introduction to Linux shell script. A shell script is a computer program designed to be run by the Unix shell, a command-line interpreter. "
   pageName: training.md
   level: Core
-  topic:  HPC
+  topic: 
+    - HPC
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/cic6001/
@@ -22,7 +24,8 @@ tableData:
   description: "This course is a single 3 hour session providing a hands on introduction to high performance computing using ShARC and the White Rose Grid. The course provides training in how jobs can be submitted to the grid in a manner that will provide a high throughput of work. Students will gain an understanding of ShARC/Bessemer, scheduling jobs using Sun Grid Engine/SLURM, what Applications are available and what Application development tools are available. The course assumes that students have a working knowledge of the material covered in course 'Introduction to Linux and Unix'. "
   pageName: training.md
   level: Core
-  topic:  HPC
+  topic: 
+    - HPC
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/hpcintro/
@@ -31,7 +34,8 @@ tableData:
   description: "Matlab is a powerful research tool and we aim to support those who are currently using, or who plan to use it for their research. This includes complete beginners as well as those who need a refresher. "
   pageName: training.md
   level: Core
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/matlab_training/
@@ -40,7 +44,8 @@ tableData:
   description: "This course is split into two units, each unit taking an average of three hours of presentations and practice. Attenders must have basic MATLAB knowledge to be able to take advantage of this course. The first session will cover fundamentals of parallel MATLAB and the training exercises will be performed on the users' local Windows workstations. The second session will introduce using MATLAB on a Linux-based HPC cluster and the exercises will be performed on the Sheffield University HPC cluster named 'sharc' using the Distributed Compute Engine. Participants must register to use 'sharc' before attending the course."
   pageName: training.md
   level: Advanced
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://dsavas.staff.shef.ac.uk/teaching/parmat/index.html
@@ -49,7 +54,8 @@ tableData:
   description: "Python is a widely used open source, high-level programming language. The design philosophy of the Python language provides code readability. The syntax allows programmers to express concepts in fewer lines of code than possible in low-level languages such as C/C++, Fortran or Java. This course provides a general introduction to the basic concepts of the Python programming language. This course is an ideal choice for people who starting to learn programming. Course content: Variables, Loops, Conditional statement, Lists. "
   pageName: training.md
   level: Core
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/python/
@@ -58,7 +64,8 @@ tableData:
   description: "Course requirement: Introduction to Python Programming (CIC6010a). After the basics you can start digging into our intermediate-level tutorials that will teach you new Python concepts, such as functions and modules. Course content: Functions, Modules and Dictionary."
   pageName: training.md
   level: Intermediate
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/python/
@@ -67,7 +74,8 @@ tableData:
   description: "This course focuses on object oriented programming (OOP) paradigm In Python. OOP is another way of developing your program, combining data and functionality.You need to understand the basics of Python, such as variables, conditional statements, loops, functions, modules. These are discussed by Introduction to Python and Intermediate Python. If you are unsure about your Python skills, please attend these courses first. "
   pageName: training.md
   level: Advanced
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/python/
@@ -76,7 +84,8 @@ tableData:
   description: "This course is an ideal choice for people who start to learn data science with Python. We will discuss how to read and initialise databases. We will also learn about the basics visualisation and statistical tools to scrutinise the hidden patterns in the data. If you are not familiar with Python Programming Language, please consider enrolling in Introduction, Intermediate and Advanced Python programming (RIT-101, RIT-102 and RIT-103). "
   pageName: training.md
   level: Intermediate
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/ds/
@@ -85,7 +94,8 @@ tableData:
   description: "We focus on more advanced data science techniques such as bootstrapping, error analysis and regression. If you are not familiar with Python Programming Language, please consider enrolling in Introduction, Intermediate and Advanced Python programming (RIT-101, RIT-102 and RIT-103) and RIT-311: Python for Data Science I (RIT-201). "
   pageName: training.md
   level: Advanced
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/ds/
@@ -94,7 +104,8 @@ tableData:
   description: "We will analyse recurring patterns in temporal signals to reveal the periodic behaviour of the data. We also perform Monte Carlo analysis to estimate the noise in the signal and create significance levels, assisting us the differentiate between real and artificial patterns in the signal. The course mainly focuses on Fourier-transformation. If you are not familiar with Python Programming Language, please consider enrolling in Introduction, Intermediate and Advanced Python programming (RIT-101, RIT-102 and RIT-103). "
   pageName: training.md
   level: Advanced
-  topic: Data
+  topic: 
+    - Data
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
   ppt: http://rcg.group.shef.ac.uk/courses/ds/
@@ -103,7 +114,10 @@ tableData:
   description: "Kick-start your project with machine learning tools in Python. This course starts from the basics of machine learning, focusing on practical applications. We will cover the fundamentals of regression models (linear regression, logistics regression, etc), cluster analysis (k-means, DBSCAN and so on) and decision trees. This course will not discuss the basics of Python programming language. Please make sure that you complete the core Python courses (RIT-101, RIT-102 and RIT-103). "
   pageName: training.md
   level: Intermediate
-  topic: Data,HPC,ML
+  topic: 
+    - Data
+    - HPC
+    - ML
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/
 
@@ -112,6 +126,9 @@ tableData:
   description: "The session aims to introduce additional supervised/unsupervised machine learning tools such as principal component analysis and so on. Please make sure that you complete the core Python courses (RIT-101, RIT-102 and RIT-103) and Introduction to Machine Learning with Python I (RIT-321). "
   pageName: training.md
   level: Intermediate
-  topic: Data,HPC,ML
+  topic: 
+    - Data
+    - HPC
+    - ML
   provider: Sheffield-RIT
   url: https://crs.shef.ac.uk/

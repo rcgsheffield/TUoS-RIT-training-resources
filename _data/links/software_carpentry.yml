@@ -1,0 +1,65 @@
+tableData:
+
+- title: The Unix Shell
+  description:  The Unix shell has been around longer than most of its users have been alive. It has survived because it’s a powerful tool that allows users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. It helps users automate repetitive tasks and easily combine smaller tasks into larger, more powerful workflows. Use of the shell is fundamental to a wide range of advanced computing tasks, including high-performance computing. These lessons will introduce you to this powerful tool.
+  pageName: training.md
+  level: Core
+  topic: 
+    - HPC
+    - Linux
+    - SWcarpentry
+  provider: External
+  url: https://swcarpentry.github.io/shell-novice/
+
+- title: Version Control with Git
+  description: A course which covers the what's, why's and how's of version control with Git.
+  pageName: training.md
+  level: Core
+  topic: 
+    - HPC
+    - Linux
+    - SWcarpentry
+  provider: External
+  url: https://swcarpentry.github.io/git-novice/index.html
+
+- title: Programming with Python
+  description: This course is an introduction to Python and is built around a common scientific task, data analysis!
+  pageName: training.md
+  level: Core
+  topic: 
+    - Data
+    - SWcarpentry    
+  provider: External
+  url: https://swcarpentry.github.io/python-novice-inflammation/
+
+- title: Plotting and Programming in Python
+  description: This lesson is an introduction to programming in Python for people with little or no previous programming experience. It uses plotting as its motivating example. This lesson references JupyterLab, but can be taught using a regular Python interpreter as well. 
+  pageName: training.md
+  level: Core
+  topic: 
+    - Data
+    - SWcarpentry  
+  provider: External
+  url: http://swcarpentry.github.io/python-novice-gapminder/
+
+- title: Programming with R
+  description: This introduction to R course is built around a common scientific task, data analysis!
+  pageName: training.md
+  level: Core
+  topic: 
+    - Data
+    - SWcarpentry 
+  provider: External
+  url: http://swcarpentry.github.io/r-novice-inflammation/
+
+- title: R for Reproducible Scientific Analysis
+  description: This course is an introduction to R for non-programmers using gapminder data. The goal of this course is to teach novice programmers to write modular code and best practices for using R for data analysis.
+  pageName: training.md
+  level: Core
+  topic: 
+    - Data
+    - SWcarpentry  
+  provider: External
+  url: https://swcarpentry.github.io/r-novice-gapminder/
+
+

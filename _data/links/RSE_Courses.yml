@@ -1,1 +1,52 @@
 tableData:
+
+- title: Reproducible Research Data and Project Management in R
+  description: This course focuses on data and project management through R and Rstudio, will introduce students to best practice and equip them with modern tools and techniques for managing data and computational workflows to their full potential. The course is designed to be relevant to students with a wide range of backgrounds, working with anything from relatively small sets of data collected from field or experimental observations, to those taking a more computational approach and bigger datasets.
+  pageName: training.md
+  level: Core
+  topic: 
+    - Data
+  provider: Sheffield-RSE
+  url: https://annakrystalli.me/rrresearchACCE20/
+
+- title: Introduction to Deep Learning
+  description: In this full-day introductory workshop, you’ll learn the basics of deep learning by training and deploying neural networks with Python or R.
+  pageName: training.md
+  level: Core
+  topic: 
+    - Data
+    - ML
+  provider: Sheffield-RSE
+  url: https://rses-dl-course.github.io/
+
+- title: Contributing to Open Source Software
+  description: An introduction to open source and Hackoberfest. Using GitHub to explore and contribute to open-source projects with some hands-on tutorials using either the RStudio or GitKraken interfaces or command line git. Prerequisite skills include - Basic git / GitHub use via RStudio, GitKraken or command line.
+  pageName: training.md
+  level: Intermediate
+  topic: 
+    - OSS
+    - Git 
+    - VC
+  provider: Sheffield-RSE
+  url: https://rse-shef-hacktoberfest-2020.netlify.app
+
+- title: git & GitHub through GitKraken - from Zero to Hero!
+  description: A training course to learn version control and collaboration through Git, GitHub & GitKraken Client.
+  pageName: training.md
+  level: Core
+  topic: 
+    - OSS
+    - Git 
+    - VC
+  provider: Sheffield-RSE
+  url: https://srse-git-github-zero2hero.netlify.app/
+
+- title: Write better research software (in Python)
+  description: A training course to help you write better Python software including docstring documentation and tests with pytest.
+  pageName: training.md
+  level: Intermediate
+  topic: 
+    - Data
+    - ML
+  provider: Sheffield-RSE
+  url: https://rse.shef.ac.uk/software_engineering_best_practices/
