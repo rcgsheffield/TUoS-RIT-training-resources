@@ -9,6 +9,5 @@ group :jekyll_plugins do
     gem 'jekyll-seo-tag'
     gem 'kramdown-parser-gfm'
     gem 'jekyll-spaceship'
-  end
 
 gem 'webrick'
