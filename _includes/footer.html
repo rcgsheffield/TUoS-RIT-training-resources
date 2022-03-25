@@ -1,27 +1,34 @@
-<div class="container-liquid">
-    <footer class="site-footer bg-dark shadow-sm">
-    <div style="padding:15px;" class="align-items-center text-center">
+<div class="wd-100">
+  <footer class="navbar-fixed-bottom site-footer bg-dark shadow-sm footer">
+  <div style="background: #212529;" class="container">
 
-      {% for externalLink in site.data.externalWebsiteLinks.links %}
+  <div class="row py-2 d-flex justify-content-between">
 
-        <a class="" style="padding:5px;" href="{{ externalLink.url }}" target="_blank">{{ externalLink.title }}</a>
+    {% for externalLink in site.data.externalWebsiteLinks.links %}
+      <div class="col d-flex justify-content-center">
+      <a class="" style="padding:5px;" href="{{ externalLink.url }}" target="_blank">{{ externalLink.title }}</a>
+      </div>
+    {% endfor %}
 
-      {% endfor %}
-
-        <a class="" style="padding:5px;" href="{{ site.github.repository_url }}" target="_blank">Contribute to the site @ TUoS GitHub</a>
-
-
-    </div>
-    <div class="align-middle text-center">
-      {% for externalLinkIcon in site.data.externalWebsiteLinks.linkImages %}
-
-          <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer"><img class="" style="height:140px;padding:10px;" src="{{ externalLinkIcon.image }}" alt=""></a>
-
-      {% endfor %}
+    <div class="col d-flex justify-content-center">
+      <a class="" style="padding:5px;" href="{{ site.github.repository_url }}" target="_blank">Contribute to the site @ TUoS GitHub</a>
     </div>
 
-    <div style="background-color: #191c1f; margin-top:10px;padding:10px;" class="row align-items-center">
-        <small class="text-center text-muted">Copyright &copy; <a href="https://www.sheffield.ac.uk" target="_blank">The University of Sheffield</a> - <a href="https://www.sheffield.ac.uk/it-services/research" target="_blank">Research IT</a> <script>document.write(new Date().getFullYear())</script></small>
+  </div>
+  <div class="row py-2 d-flex justify-content-between">
+    {% for externalLinkIcon in site.data.externalWebsiteLinks.linkImages %}
+    <div class="col align-middle text-center">
+        <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer"><img class="" style="max-height:140px;padding:10px;" src="{{site.baseurl}}/{{ externalLinkIcon.image }}" alt=""></a>
     </div>
-  </footer>
+    {% endfor %}
+  </div>
+
+  </div>
+  
+  <div style="background: #191c1f;" class="wd-100 py-2 d-flex justify-content-between">
+    <div class="col align-middle text-center">
+      <div style="color: rgb(155, 155, 155);">Copyright &copy; <a href="https://www.sheffield.ac.uk" target="_blank">The University of Sheffield</a> - <a href="https://www.sheffield.ac.uk/it-services/research" target="_blank">Research IT</a> <script>document.write(new Date().getFullYear())</script></div>
+    </div>
+  </div>
+</footer>
 </div>
