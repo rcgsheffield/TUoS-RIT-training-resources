@@ -6,6 +6,8 @@ tableData:
   level: Core
   topic: 
     - Data
+    - R
+    - Version Control
   provider: Sheffield-RSE
   ppt: https://annakrystalli.me/rrresearchACCE20/
   git: https://github.com/annakrystalli/rrresearchACCE20
@@ -16,7 +18,9 @@ tableData:
   level: Core
   topic: 
     - Data
-    - ML
+    - Deep Learning
+    - Regression and Classification
+    - Convolutional Neural Networks
   provider: Sheffield-RSE
   url: https://rse.shef.ac.uk/
   ppt: https://rses-dl-course.github.io/
