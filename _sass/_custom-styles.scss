@@ -12,6 +12,8 @@
 
    .fa, .fas {
       font-size: large;
+      padding-left: 2px;
+      padding-right: 2px;
    }
 
    .fab {
@@ -29,6 +31,24 @@
 	max-width: 1320px;
 }
 
+html {
+   position: relative;
+   min-height: 100%;
+ }
+
+.course-container{
+   background: #fff;
+}
+
+ .footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 242px;
+   background:#212529;
+ }
+
    .logo-holder {
     padding: 0px;
     max-width: 220px;;
@@ -40,18 +60,21 @@
    }
 
    body {
-       
     font-size: 0.9rem;
     background-color: #f1f2f1;
     padding:0;
     margin:0;
     font-family: Blake, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 0.9rem;
     line-height:1.5;
     color:#606c71;
-    background-color:#f1f2f1;
     color:#413f42
 }
+
+   .footer-offset {
+   //footer offset
+   margin-bottom:260px !important;
+   }
+
    .main-content kbd {
     background-color:#fafbfc;
     border:1px solid #c6cbd1;
@@ -158,6 +181,8 @@
    .main-content blockquote>:last-child {
     margin-bottom:0
    }
+
+  
    table {
     background-color: white;
     width:100%;

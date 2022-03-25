@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Research IT - Training Resources"
+layout: training
+title: "Research IT - Training Resources Index"
 root: .
 redirect_from: "/"
 ---

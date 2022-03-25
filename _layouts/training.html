@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{%- include head.html -%}
+  
+
+<body class="">
+{%- include header.html -%}
+  <div class="container">
+    <div class="main-content row align-items-center">
+        <pre class="text-wrap shadow-sm" >Please make your selection below with the search menu. We have pre-ticked to only include TUoS resources by default but further external resources are available.</pre>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-md-2 main-content-search sticky-top shadow-sm">
+        <div>
+          <input id="searchInput" type="text" placeholder="Search..." style="width: 98%;">
+        </div>
+        <div> 
+          <div class="search-label">
+              <label>Level</label>
+          </div>
+          <div class="search-criteria">
+            <div class="search-item">
+              <input type="checkbox" id="core" name="core" value="Core">
+              <label for="core">Core</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="intermediate" name="intermediate" value="Intermediate">
+              <label for="intermediate">Intermediate</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="advanced" name="advanced" value="Advanced">
+              <label for="advanced">Advanced</label>
+            </div>
+          </div>
+        </div>
+
+        <div> 
+          <div class="search-label">
+            <label>Topic</label>
+          </div>
+          <div class="search-criteria">
+            <div class="search-item">
+              <input type="checkbox" id="hpc" name="hpc" value="hpc">
+              <label for="home">High Performance Computing</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="data" name="data" value="Data">
+              <label for="home">Data Analysis</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="cloud" name="cloud" value="Cloud">
+              <label for="home">Cloud</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="visualisation" name="visualisation" value="Visualisation">
+              <label for="home">Data Visualisation</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="containers" name="containers" value="Containers">
+              <label for="home">Containers</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="chemistry" name="chemistry" value="chemistry">
+              <label for="home">Chemistry</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="fea" name="fea" value="fea">
+              <label for="home">Finite Element Modelling</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="nlp" name="nlp" value="nlp">
+              <label for="home">Natural Language Processing</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="bio" name="bio" value="bio">
+              <label for="home">Biology</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="cfd" name="cfd" value="cfd">
+              <label for="home">Computational Fluid Dynamics</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="ml" name="ml" value="ml">
+              <label for="home">Machine Learning</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="ddp" name="ddp" value="ddp">
+              <label for="home">DDP Modules</label><br>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="flash-it" style="margin-top: 20px; border:2px;" >
+          <div>
+            <label style="font-weight: bold;">Provider</label>
+          </div>
+          <div class="search-criteria">
+            <div class="search-item">
+              <div id="flash-it-delayed">
+                <input type="checkbox" id="external" name="external" value="External">
+                <label for="home">External</label><br>
+              </div>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="sheffield-rit" name="sheffield-rit" value="sheffield-rit">
+              <label for="home">Sheffield-RIT</label><br>
+            </div>
+            <div class="search-item">
+              <input type="checkbox" id="sheffield-rse" name="sheffield-rse" value="sheffield-rse">
+              <label for="home">Sheffield-RSE</label><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="col-md-10">
+        <div class="row align-items-center">
+          <div class="main-content-table footer-offset">
+            <table class="shadow-sm" id="trainingTable">
+              <colgroup>
+                <col width="12%" />
+                <col width="10%" />
+                <col width="5%" />
+                <col width="5%" />
+                <col width="73%" />
+              </colgroup>
+              <thead>
+              <tr class="header">
+                <th>Name</th>
+                <th>Tags</th>
+                <th>Course Home Page</th>
+                <th>Course Materials Links</th>
+                <th>Short Description</th>
+              </tr>
+              </thead>
+              <tbody id="pageTable">
+                {% for events in site.data.links %}
+                {% assign data = events[1] %}
+                  {% for data in data.tableData %}
+                    {% if data.pageName == page.name %}
+                      <tr>
+                        <td markdown="span">{{ data.title }}</td>
+                        <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
+                                            {% if data.topic != nil %}
+                                              <div><b>Topic:</b><br>
+                                                <div class="topics">
+                                                {% for topic in data.topic %}
+                                                  {{ topic }}<br>
+                                                {% endfor %} 
+                                                </div>
+                                              </div>
+                                            {% endif %}
+                                            {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
+                        </td>
+                        <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-edit"></i></i></a>{% endif %}</td>
+                        <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-link"></i></a>{% endif %} {% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %} {% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
+                        <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
+                      </tr>    
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+{%- include footer.html -%}
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

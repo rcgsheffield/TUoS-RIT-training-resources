@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{%- include head.html -%}
+  
+
+<body class="">
+{%- include header.html -%}
+  <div style="min-height: 100%;" class="container-lg">
+    
+    <div style="margin-top:10px;" class="row">
+      <div class="col-12 shadow-sm course-container footer-offset">
+        <h2 style="margin-top:1rem;">{{ page.title }}</h2>
+        <hr>
+
+        <h3>Outline</h3>
+        {{ page.description | markdownify }}
+
+        Please sign up to this event at the following link: <a href="{{ page.signuplink }}"">Sign Up!</a>
+
+        {{ content | markdownify }}
+      </div>
+    </div>
+  </div>
+    
+{%- include footer.html -%}
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
