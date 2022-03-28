@@ -40,6 +40,8 @@ tableData:
   level: Core
   topic: 
     - OSS
+    - Git
+    - VC
   provider: Sheffield-RSE
   url: https://rse.shef.ac.uk/
   ppt: https://srse-git-github-zero2hero.netlify.app/
