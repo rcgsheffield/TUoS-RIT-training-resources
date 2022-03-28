@@ -17,6 +17,7 @@ tableData:
   level: Core
   topic: 
     - Data
+    - ML
   provider: Sheffield-RSE
   url: https://rse.shef.ac.uk/
   ppt: https://rses-dl-course.github.io/
