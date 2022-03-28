@@ -6,8 +6,6 @@ tableData:
   level: Core
   topic: 
     - Data
-    - R
-    - Version Control
   provider: Sheffield-RSE
   ppt: https://annakrystalli.me/rrresearchACCE20/
   git: https://github.com/annakrystalli/rrresearchACCE20
@@ -18,9 +16,6 @@ tableData:
   level: Core
   topic: 
     - Data
-    - Deep Learning
-    - Regression and Classification
-    - Convolutional Neural Networks
   provider: Sheffield-RSE
   url: https://rse.shef.ac.uk/
   ppt: https://rses-dl-course.github.io/
@@ -44,10 +39,6 @@ tableData:
   level: Core
   topic: 
     - OSS
-    - git 
-    - GitHub
-    - Gitkraken
-    - Version Control
   provider: Sheffield-RSE
   url: https://rse.shef.ac.uk/
   ppt: https://srse-git-github-zero2hero.netlify.app/
@@ -58,10 +49,7 @@ tableData:
   pageName: training.md
   level: Intermediate
   topic: 
-    - Python
-    - Documentation
-    - Software testing
-    - Unit tests
+    - Data
   provider: Sheffield-RSE
   ppt: https://rse.shef.ac.uk/software_engineering_best_practices/
   git: https://github.com/RSE-Sheffield/software_engineering_best_practices
