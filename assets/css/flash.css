@@ -1,64 +1,64 @@
-  @-webkit-keyframes blue-flash {
+  @-webkit-keyframes violet-flash {
     60% {
         background: #fff ;
       }
       70% {
-        background:rgba(87, 160, 255, 0.8);
+        background:#5c3a8f;
       }
       80% {
           background: #fff ;
         }
       90% {
-      background:rgba(87, 160, 255, 0.8);
+      background:#5c3a8f;
       }
       100% {
           background: #fff ;
       }
     }
-  @-moz-keyframes blue-flash {
+  @-moz-keyframes violet-flash {
     60% {
         background: #fff ;
       }
       70% {
-        background:rgba(87, 160, 255, 0.8);
+        background:#5c3a8f;
       }
       80% {
           background: #fff ;
         }
       90% {
-      background:rgba(87, 160, 255, 0.8);
+      background:#5c3a8f;
       }
       100% {
           background: #fff ;
       }
     }
-  @keyframes blue-flash {
+  @keyframes violet-flash {
     60% {
       background: #fff ;
     }
     70% {
-      background:rgba(87, 160, 255, 0.8);
+      background:#5c3a8f;
     }
     80% {
         background: #fff ;
       }
     90% {
-    background:rgba(87, 160, 255, 0.8);
+    background:#5c3a8f;
     }
     100% {
         background: #fff ;
     }
   }
   #flash-it {
-    -webkit-animation: blue-flash 2.5s linear alternate 0.5s;
-    -moz-animation: blue-flash 2.5s linear alternate 0.5s;
-    -o-animation: blue-flash 2.5s linear alternate 0.5s;
-    animation: blue-flash 2.5s linear alternate 0.5s;
+    -webkit-animation: violet-flash 2.5s linear alternate 0.5s;
+    -moz-animation: violet-flash 2.5s linear alternate 0.5s;
+    -o-animation: violet-flash 2.5s linear alternate 0.5s;
+    animation: violet-flash 2.5s linear alternate 0.5s;
   }
 
   #flash-it-delayed {
-    -webkit-animation: blue-flash 2.5s linear alternate 3.0s;
-    -moz-animation: blue-flash 2.5s linear alternate 3.0s;
-    -o-animation: blue-flash 2.5s linear alternate 3.0s;
-    animation: blue-flash 2.5s linear alternate 3.0s;
+    -webkit-animation: violet-flash 2.5s linear alternate 3.0s;
+    -moz-animation: violet-flash 2.5s linear alternate 3.0s;
+    -o-animation: violet-flash 2.5s linear alternate 3.0s;
+    animation: violet-flash 2.5s linear alternate 3.0s;
   }
